@@ -1,4 +1,4 @@
-.PHONY: build start stop logs clean apache-modules-status apache-modules-enable apache-modules-enable-restart
+.PHONY: build start stop logs clean apache-modules-status apache-modules-enable apache-modules-enable-restart health-check logs-collect
 
 build:
 	podman build -t myphp:8.3-dev -f docker/php/Dockerfile docker/php
@@ -32,6 +32,14 @@ apache-modules-enable-restart:
 
 logs:
 	podman logs -f web
+
+logs-collect:
+	@echo "Collecte des logs de tous les conteneurs..."
+	@bash ./scripts/logs-collect.sh
+
+health-check:
+	@echo "Vérification de la santé des conteneurs..."
+	@bash ./scripts/health-check.sh
 
 clean:
 	podman rm -f web php db || true
