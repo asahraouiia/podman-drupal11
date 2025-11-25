@@ -1,0 +1,45 @@
+version: '3.8'
+services:
+  web:
+    build:
+      context: ./docker/apache
+      dockerfile: Dockerfile
+    image: myapache:latest
+    container_name: web
+    ports:
+      - "8080:80"
+    volumes:
+      - ./src:/var/www/html
+    depends_on:
+      - php
+    networks:
+      - drupal_net
+
+  php:
+    build:
+      context: ./docker/php
+      dockerfile: Dockerfile
+    image: myphp:8.3-dev
+    container_name: php
+    volumes:
+      - ./src:/var/www/html
+    networks:
+      - drupal_net
+
+  db:
+    image: postgres:16
+    container_name: db
+    environment:
+      POSTGRES_USER: drupal
+      POSTGRES_PASSWORD: drupal
+      POSTGRES_DB: drupal
+    volumes:
+      - drupal_db_data:/var/lib/postgresql/data
+    networks:
+      - drupal_net
+
+volumes:
+  drupal_db_data: {}
+
+networks:
+  drupal_net: {}

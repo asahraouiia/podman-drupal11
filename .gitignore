@@ -1,0 +1,36 @@
+# Drupal files
+src/web/
+src/vendor/
+src/recipes/
+
+# Drupal settings (contient des secrets)
+src/web/sites/*/settings.php
+src/web/sites/*/settings.local.php
+src/web/sites/*/services.yml
+
+# Fichiers Drupal générés
+src/web/sites/*/files/
+src/web/sites/*/private/
+
+# Logs et caches
+*.log
+src/web/sites/*/cache/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Podman/Docker
+*.bak
+
+# Temporaires
+*.tmp
+*.temp

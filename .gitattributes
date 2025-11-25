@@ -1,0 +1,30 @@
+# Gestion des fins de lignes
+# Forcer LF pour tous les fichiers texte (compatibilité Linux/Docker)
+* text=auto eol=lf
+
+# Scripts shell doivent toujours être en LF
+*.sh text eol=lf
+*.bash text eol=lf
+
+# Dockerfiles et configs en LF
+Dockerfile* text eol=lf
+*.conf text eol=lf
+*.ini text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Scripts Windows peuvent être en CRLF
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Fichiers binaires
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.gz binary
+*.tar binary
