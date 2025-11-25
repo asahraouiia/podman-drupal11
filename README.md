@@ -4,6 +4,26 @@
 
 Environnement de développement Drupal 11 sous Podman avec Apache, PHP 8.3-FPM et PostgreSQL 16.
 
+## 📖 Guide de Lecture
+
+👉 **[00 - GUIDE DE LECTURE COMPLET](docs/00_GUIDE_LECTURE.md)** 👈 - Commencez ici !
+
+**Pour les débutants** (première installation) :
+1. 📘 [01 - INSTALLATION PODMAN](docs/01_PODMAN_INSTALL.md) - Installer WSL2 et Podman (30-45 min)
+2. 📗 [02 - CONTENEUR APACHE](docs/02_CONTAINER_APACHE_INSTALL.md) - Comprendre la configuration Apache
+3. 📙 [03 - CONTENEUR PHP-FPM](docs/03_CONTAINER_PHP_INSTALL.md) - Comprendre la configuration PHP
+4. 📕 [04 - CONTENEUR POSTGRESQL](docs/04_CONTAINER_POSTGRESQL_INSTALL.md) - Comprendre la base de données
+5. 📔 [05 - INSTALLATION DRUPAL](docs/05_DRUPAL_INSTALLATION.md) - Installer et configurer Drupal
+
+**Pour les utilisateurs avancés** (environnement déjà installé) :
+- 🔧 [06 - CLEANUP SCRIPT](docs/06_CLEANUP_SCRIPT.md) - Nettoyer l'environnement
+- 📚 Consulter directement les sections spécifiques des guides ci-dessus
+- 🎯 Utiliser les [Commandes Principales](#🛠️-commandes-principales)
+
+**En cas de problème** :
+- 🚨 Section **Dépannage** de chaque guide
+- 💡 [Dépannage Rapide](#🐛-dépannage-rapide) ci-dessous
+
 ## ⚡ Démarrage Rapide
 
 ### Windows (WSL2 requis)
@@ -28,18 +48,68 @@ Environnement de développement Drupal 11 sous Podman avec Apache, PHP 8.3-FPM e
 
 ## 📚 Documentation Complète
 
-**Pour l'installation détaillée, la configuration et le dépannage, consultez :**
+### 📖 Parcours d'apprentissage recommandé
 
-👉 **[GUIDE D'INSTALLATION COMPLET](docs/INSTALLATION.md)** 👈
+| Étape | Guide | Temps estimé | Objectif |
+|-------|-------|--------------|----------|
+| **1** | [01 - INSTALLATION PODMAN](docs/01_PODMAN_INSTALL.md) | 30-45 min | Installer WSL2, Podman Desktop, créer la machine virtuelle |
+| **2** | [02 - CONTENEUR APACHE](docs/02_CONTAINER_APACHE_INSTALL.md) | 15-20 min | Comprendre le serveur web et le proxy FastCGI |
+| **3** | [03 - CONTENEUR PHP-FPM](docs/03_CONTAINER_PHP_INSTALL.md) | 15-20 min | Comprendre PHP, extensions et Composer |
+| **4** | [04 - CONTENEUR POSTGRESQL](docs/04_CONTAINER_POSTGRESQL_INSTALL.md) | 15-20 min | Comprendre la base de données et volumes |
+| **5** | [05 - INSTALLATION DRUPAL](docs/05_DRUPAL_INSTALLATION.md) | 20-30 min | Installer et configurer Drupal 11 |
 
-Ce guide couvre :
-- Prérequis et installation de Podman/WSL2
-- Structure du projet
-- Configuration des services (Apache, PHP, PostgreSQL)
-- Commandes d'administration
-- Tests de vérification
-- Dépannage des problèmes courants
-- Bonnes pratiques de sécurité
+**Total : ~2 heures pour une installation complète de zéro**
+
+### 🎯 Guides par thématique
+
+**Installation et configuration**
+
+👉 **[01 - INSTALLATION PODMAN](docs/01_PODMAN_INSTALL.md)** 👈
+- Installation de WSL2 et Podman Desktop sur Windows 11
+- Configuration initiale et gestion de Podman Machine
+- Volumes, réseaux et commandes de base
+- **✅ Procédure complète validée** - Workflow testé étape par étape
+- Dépannage Podman et bonnes pratiques
+
+### Configuration des conteneurs
+
+👉 **[02 - CONTENEUR APACHE](docs/02_CONTAINER_APACHE_INSTALL.md)** 👈
+- Dockerfile et configuration VirtualHost
+- Modules Apache (proxy, fcgi, rewrite)
+- Gestion du conteneur et logs
+- Dépannage et optimisation Apache
+
+👉 **[03 - CONTENEUR PHP-FPM](docs/03_CONTAINER_PHP_INSTALL.md)** 👈
+- Dockerfile et configuration PHP (php.ini)
+- Extensions PHP pour Drupal
+- Composer et gestion des dépendances
+- Dépannage et optimisation PHP
+
+👉 **[04 - CONTENEUR POSTGRESQL](docs/04_CONTAINER_POSTGRESQL_INSTALL.md)** 👈
+- Configuration PostgreSQL 16
+- Variables d'environnement et volumes
+- Connexion, sauvegarde et restauration
+- Dépannage et optimisation PostgreSQL
+
+### Installation Drupal
+
+👉 **[05 - INSTALLATION DRUPAL](docs/05_DRUPAL_INSTALLATION.md)** 👈
+- Installation de Drupal 11
+- Configuration de la base de données
+- Gestion des modules et thèmes
+- Mise à jour Drupal et modules
+- Drush et outils de développement
+- Dépannage Drupal
+
+### 🧹 Maintenance
+
+👉 **[06 - SCRIPT DE NETTOYAGE](docs/06_CLEANUP_SCRIPT.md)** 👈
+- Suppression complète de l'environnement
+- Commandes de nettoyage manuel
+- Récupération d'espace disque
+- Repartir de zéro proprement
+
+---
 
 ## 🛠️ Commandes Principales
 
@@ -104,7 +174,12 @@ make apache-modules-status
 podman exec db psql -U drupal -c "SELECT version();"
 ```
 
-👉 **Pour plus de solutions : [Guide de Dépannage](docs/INSTALLATION.md#7-dépannage)**
+👉 **Pour plus de solutions :**
+- [Dépannage Podman](docs/01_PODMAN_INSTALL.md#7-dépannage)
+- [Dépannage Apache](docs/02_CONTAINER_APACHE_INSTALL.md#9-dépannage)
+- [Dépannage PHP](docs/03_CONTAINER_PHP_INSTALL.md#10-dépannage)
+- [Dépannage PostgreSQL](docs/04_CONTAINER_POSTGRESQL_INSTALL.md#10-dépannage)
+- [Dépannage Drupal](docs/05_DRUPAL_INSTALLATION.md#9-dépannage-drupal)
 
 ## 📁 Structure
 
@@ -114,6 +189,7 @@ podman/
 │   ├── apache/              # Configuration Apache
 │   └── php/                 # Configuration PHP-FPM
 ├── scripts/                 # Scripts d'automatisation
+│   ├── cleanup.sh           # ⚠️ Nettoyage complet (supprime tout)
 │   ├── start-containers.*   # Démarrage complet
 │   ├── stop-containers.*    # Arrêt propre
 │   ├── health-check.*       # Vérification santé
