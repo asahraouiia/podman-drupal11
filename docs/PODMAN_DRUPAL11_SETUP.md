@@ -20,6 +20,27 @@ Ce guide décrit comment créer un environnement de développement local pour Dr
 
 Note sur la version PHP : en date du 2025-11-25, Drupal 11 demande PHP 8.1 ou supérieur. Utilisez PHP 8.2/8.3 pour plus de compatibilité et vérifiez toujours les exigences actuelles sur https://www.drupal.org/docs.
 
+**Installation rapide** :
+
+```bash
+# Cloner le dépôt
+git clone https://github.com/asahraouiia/podman-drupal11.git
+cd podman-drupal11
+
+# Démarrer l'environnement (Bash/WSL)
+chmod +x scripts/*.sh
+./scripts/start-containers.sh
+
+# Ou sur PowerShell (Windows)
+.\scripts\start-containers.ps1
+
+# Installer Drupal
+./scripts/drupal-install.sh
+
+# Accéder au site
+# http://localhost:8080
+```
+
 -------------------------
 **1) Sample `Dockerfile` for PHP-FPM (with Composer and PHP extensions)**
 
