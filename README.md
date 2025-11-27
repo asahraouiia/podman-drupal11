@@ -143,7 +143,7 @@ make apache-modules-enable MODULE=ssl  # Activer un module
 |---------|-------|----------------------|
 | Apache  | 8080  | http://localhost:8080 |
 | PHP-FPM | 9000  | Interne uniquement    |
-| PostgreSQL | 5432 | Interne uniquement |
+| PostgreSQL | 5432 | localhost:5432 (accessible depuis Windows pour DBeaver, VSCode, etc.) |
 
 ### Base de Données (Développement)
 

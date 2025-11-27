@@ -331,6 +331,19 @@ Cache les chemins résolus pour améliorer les performances I/O.
 
 ### 4.2. Vérifier les extensions chargées
 
+**Script automatique de vérification :**
+
+```bash
+# Vérifier toutes les extensions requises
+./scripts/check-php-extensions.sh
+
+# Sortie attendue :
+# ✅ Toutes les extensions requises sont installées
+# Détails : pdo, pdo_pgsql, pgsql, gd (bundled 2.1.0), xml, zip, intl, opcache, bcmath, apcu
+```
+
+**Vérifications manuelles :**
+
 ```bash
 # Liste complète des extensions
 podman exec php php -m
@@ -340,6 +353,24 @@ podman exec php php -m | grep pdo
 
 # Voir les détails d'une extension
 podman exec php php -i | grep -A 10 "^gd$"
+
+# Vérifier GD spécifiquement
+podman exec php php -r "print_r(gd_info());"
+```
+
+**Vérification GD (important pour images Drupal) :**
+
+```bash
+podman exec php php -i | grep -A 15 "^gd$"
+
+# Sortie attendue :
+# GD Support => enabled
+# GD Version => bundled (2.1.0 compatible)
+# FreeType Support => enabled
+# JPEG Support => enabled
+# PNG Support => enabled
+# GIF Read Support => enabled
+# GIF Create Support => enabled
 ```
 
 ### 4.3. Vérifier la version PHP

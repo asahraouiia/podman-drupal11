@@ -1,4 +1,4 @@
-.PHONY: build start stop logs clean apache-modules-status apache-modules-enable apache-modules-enable-restart health-check logs-collect composer composer/install composer/update composer/require drush drush/status drush/cr drush/cex drush/cim drush/uli help
+.PHONY: build start stop logs clean apache-modules-status apache-modules-enable apache-modules-enable-restart health-check logs-collect composer composer/install composer/update composer/require drush drush/status drush/cr drush/cex drush/cim drush/uli php/check-extensions help
 
 # Variables
 DRUSH_CMD = podman exec php vendor/bin/drush
@@ -24,6 +24,7 @@ help:
 	@echo "PHP & Shell:"
 	@echo "  make php/bash                 - Ouvrir bash dans le container PHP"
 	@echo "  make php/shell                - Ouvrir sh dans le container PHP"
+	@echo "  make php/check-extensions     - Vérifier les extensions PHP installées"
 	@echo ""
 	@echo "Composer:"
 	@echo "  make composer/install         - Installer les dépendances"
@@ -137,6 +138,9 @@ php/bash:
 
 php/shell:
 	podman exec -it php sh
+
+php/check-extensions:
+	@bash ./scripts/check-php-extensions.sh
 
 composer:
 	$(COMPOSER_CMD) $(filter-out $@,$(MAKECMDGOALS))
