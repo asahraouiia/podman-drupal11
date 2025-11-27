@@ -68,6 +68,7 @@ Ce guide vous aide à naviguer dans la documentation selon votre niveau et vos o
 
 | Besoin | Guide | Section |
 |--------|-------|---------||
+| Installation automatisée complète | [07 - SETUP FULL SCRIPT](07_SETUP_FULL_SCRIPT.md) | Tout le guide |
 | Nettoyer l'environnement | [06 - CLEANUP SCRIPT](06_CLEANUP_SCRIPT.md) | Tout le guide |
 | Problème Apache | [02 - CONTENEUR APACHE](02_CONTAINER_APACHE_INSTALL.md) | Section 9 - Dépannage |
 | Problème PHP | [03 - CONTENEUR PHP-FPM](03_CONTAINER_PHP_INSTALL.md) | Section 10 - Dépannage |

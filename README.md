@@ -16,6 +16,7 @@ Environnement de développement Drupal 11 sous Podman avec Apache, PHP 8.3-FPM e
 5. 📔 [05 - INSTALLATION DRUPAL](docs/05_DRUPAL_INSTALLATION.md) - Installer et configurer Drupal
 
 **Pour les utilisateurs avancés** (environnement déjà installé) :
+- 🚀 [07 - SETUP FULL SCRIPT](docs/07_SETUP_FULL_SCRIPT.md) - Installation automatisée complète
 - 🔧 [06 - CLEANUP SCRIPT](docs/06_CLEANUP_SCRIPT.md) - Nettoyer l'environnement
 - 📚 Consulter directement les sections spécifiques des guides ci-dessus
 - 🎯 Utiliser les [Commandes Principales](#🛠️-commandes-principales)
