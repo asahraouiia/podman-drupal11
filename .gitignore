@@ -1,7 +1,37 @@
-# Drupal files
-src/web/
+# Merged rule set:
+# 1. Ignore everything under src/web (large Drupal tree, generated assets)
+# 2. Keep the placeholder .gitignore
+# 3. Re-include custom modules and themes for tracking
+
+src/web/*
+!src/web/.gitignore
+
+# Allow traversal into modules and themes directories so we can rescue custom
+!src/web/modules/
+src/web/modules/*
+!src/web/modules/custom/
+!src/web/modules/custom/**
+
+!src/web/themes/
+src/web/themes/*
+!src/web/themes/custom/
+!src/web/themes/custom/**
+
+# Still ignore vendor and recipes entirely
 src/vendor/
 src/recipes/
+
+# Root-level web docroot rules (same logic):
+web/*
+!web/.gitignore
+!web/modules/
+web/modules/*
+!web/modules/custom/
+!web/modules/custom/**
+!web/themes/
+web/themes/*
+!web/themes/custom/
+!web/themes/custom/**
 
 # Drupal settings (contient des secrets)
 src/web/sites/*/settings.php

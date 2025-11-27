@@ -1,0 +1,5 @@
+# This file is intentionally tracked.
+# All other files under src/web are ignored by the root .gitignore.
+# Add exceptions here if you need to re-include specific paths.
+# Example to track a custom module directory:
+# !modules/custom/my_module/
