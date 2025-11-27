@@ -5,7 +5,8 @@ RUN apt-get update \
   && apt-get install -y --no-install-recommends \
     git curl unzip libpng-dev libjpeg-dev libfreetype6-dev libxml2-dev \
     libzip-dev zlib1g-dev libicu-dev libonig-dev libpq-dev \
-  && docker-php-ext-configure gd --with-freetype --with-jpeg \
+    libwebp-dev libavif-dev \
+  && docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp --with-avif \
   && docker-php-ext-install -j$(nproc) \
     pdo pdo_pgsql pgsql gd xml zip intl opcache bcmath
 

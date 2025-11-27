@@ -72,7 +72,8 @@ RUN apt-get update \
   && apt-get install -y --no-install-recommends \
     git curl unzip libpng-dev libjpeg-dev libfreetype6-dev libxml2-dev \
     libzip-dev zlib1g-dev libicu-dev libonig-dev libpq-dev \
-  && docker-php-ext-configure gd --with-freetype --with-jpeg \
+    libwebp-dev libavif-dev \
+  && docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp --with-avif \
   && docker-php-ext-install -j$(nproc) \
     pdo pdo_pgsql pgsql gd xml zip intl opcache bcmath
 
@@ -361,7 +362,7 @@ podman exec php php -r "print_r(gd_info());"
 **Vérification GD (important pour images Drupal) :**
 
 ```bash
-podman exec php php -i | grep -A 15 "^gd$"
+podman exec php php -i | grep -A 20 "^gd$"
 
 # Sortie attendue :
 # GD Support => enabled
@@ -369,9 +370,35 @@ podman exec php php -i | grep -A 15 "^gd$"
 # FreeType Support => enabled
 # JPEG Support => enabled
 # PNG Support => enabled
+# WebP Support => enabled
+# AVIF Support => enabled
 # GIF Read Support => enabled
 # GIF Create Support => enabled
 ```
+
+**Vérification complète des formats supportés :**
+
+```bash
+podman exec php php -r "print_r(gd_info());"
+
+# Sortie attendue :
+# Array
+# (
+#     [GD Version] => bundled (2.1.0 compatible)
+#     [FreeType Support] => 1
+#     [JPEG Support] => 1
+#     [PNG Support] => 1
+#     [WebP Support] => 1
+#     [AVIF Support] => 1
+#     [GIF Read Support] => 1
+#     [GIF Create Support] => 1
+#     ...
+# )
+```
+
+> **Note** : Les formats WebP et AVIF permettent une compression d'images optimisée :
+> - **WebP** : ~30% plus léger que JPEG avec qualité équivalente
+> - **AVIF** : ~50% plus léger que JPEG, format ultra-moderne
 
 ### 4.3. Vérifier la version PHP
 

@@ -8,6 +8,8 @@ Format suggestion:
 
 ## Historique
 
+- **2025-11-27** — asahraoui — Ajout du support WebP et AVIF dans l'extension GD pour l'optimisation des images. Fichiers : `docker/php/Dockerfile`, `docs/03_CONTAINER_PHP_INSTALL.md`. Notes : WebP (~30% plus léger que JPEG), AVIF (~50% plus léger), formats modernes pour améliorer les performances web de Drupal.
+
 - 2025-11-27 — abdel — Ajout script de vérification des extensions PHP. Files: `scripts/check-php-extensions.sh`, `Makefile`, `docs/03_CONTAINER_PHP_INSTALL.md`, `README.md`. Notes: Nouveau script `check-php-extensions.sh` pour vérifier automatiquement toutes les extensions PHP requises par Drupal 11 (pdo, pdo_pgsql, pgsql, gd, xml, zip, intl, opcache, bcmath, apcu). Affiche les détails de l'extension GD (bundled 2.1.0 compatible) avec support FreeType, JPEG, PNG, GIF. Commande `make php/check-extensions` ajoutée. Documentation enrichie avec exemples de vérification GD. ✅ Confirmation : GD library est bien installée et fonctionnelle.
 
 - 2025-11-27 — abdel — Exposition PostgreSQL port 5432 + ajout commandes Drush dans Makefile. Files: `podman-compose.yml`, `scripts/SETUP_FULL.sh`, `docs/04_CONTAINER_POSTGRESQL_INSTALL.md`, `Makefile`. Notes: Exposition du port PostgreSQL 5432 sur localhost pour permettre la connexion depuis VSCode, DBeaver, pgAdmin et autres outils externes via `localhost:5432`. Ajout de variables `DRUSH_CMD` et `COMPOSER_CMD` dans Makefile pour simplifier les commandes. Nouvelles cibles: `make drush/status`, `make drush/cr`, `make drush/cex`, `make drush/cim`, `make drush/uli`. Section aide enrichie avec exemples Drush et Composer. Documentation mise à jour avec configuration pour outils externes.
