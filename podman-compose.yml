@@ -55,6 +55,8 @@ services:
   db:
     image: postgres:16               # Version minimale requise: PostgreSQL 16
     container_name: db
+    ports:
+      - "5432:5432"                  # Exposition pour outils externes (VSCode, DBeaver, etc.)
     environment:
       POSTGRES_USER: drupal          # Utilisateur base de données
       POSTGRES_PASSWORD: drupal      # Mot de passe (à changer en production!)

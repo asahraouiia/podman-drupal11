@@ -70,6 +70,8 @@ services:
   db:
     image: postgres:16               # Version minimale requise: PostgreSQL 16
     container_name: db
+    ports:
+      - "5432:5432"                  # Exposition pour outils externes (VSCode, DBeaver, etc.)
     environment:
       POSTGRES_USER: drupal          # Utilisateur base de données
       POSTGRES_PASSWORD: drupal      # Mot de passe (à changer en production!)
@@ -111,6 +113,27 @@ container_name: db
 ```
 
 Nom du conteneur. Utilisé pour la résolution DNS dans le réseau Podman (`db:5432`).
+
+#### Ports
+
+```yaml
+ports:
+  - "5432:5432"
+```
+
+Expose le port PostgreSQL sur `localhost:5432` pour permettre la connexion depuis :
+- **VSCode** (extensions PostgreSQL/MySQL)
+- **DBeaver**, **pgAdmin**, **Navicat**
+- Tout autre outil de gestion de base de données
+
+**Configuration pour outils externes :**
+- Host: `localhost`
+- Port: `5432`
+- Database: `drupal`
+- User: `drupal`
+- Password: `drupal`
+
+**Note :** Les containers PHP/Apache continuent d'utiliser `db:5432` via le réseau interne.
 
 #### Volumes
 

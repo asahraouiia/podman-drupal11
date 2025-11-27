@@ -146,6 +146,7 @@ EOF
         -e POSTGRES_USER=drupal \
         -e POSTGRES_PASSWORD=drupal \
         -v drupal_db_data:/var/lib/postgresql/data \
+        -p 5432:5432 \
         --health-cmd="pg_isready -U drupal" \
         --health-interval=10s \
         --health-timeout=5s \
