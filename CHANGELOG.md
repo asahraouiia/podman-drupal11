@@ -8,6 +8,8 @@ Format suggestion:
 
 ## Historique
 
+- **2025-11-28** — asahraoui — Correction erreur bind mounts logs sous Windows/WSL + ajout module custom Drupal. Fichiers : `podman-compose.yml`, `src/web/modules/custom/my_list_field/`, `docs/PODMAN_DRUPAL11_SETUP.md`, `.gitignore`. Notes : Suppression volumes `./logs/apache`, `./logs/php`, `./logs/postgres` causant erreurs `/mnt/c/` sous WSL. Alternative : `podman logs <container>`. Ajout module example `my_list_field` (FieldType extends ListItemBase avec contrôle save via preSave() + EventSubscriber). Règles .gitignore ajustées pour tracker custom modules/themes sous `src/web/` et `web/`.
+
 - **2025-11-27** — asahraoui — Ajout du support WebP et AVIF dans l'extension GD pour l'optimisation des images. Fichiers : `docker/php/Dockerfile`, `docs/03_CONTAINER_PHP_INSTALL.md`. Notes : WebP (~30% plus léger que JPEG), AVIF (~50% plus léger), formats modernes pour améliorer les performances web de Drupal.
 
 - 2025-11-27 — abdel — Ajout script de vérification des extensions PHP. Files: `scripts/check-php-extensions.sh`, `Makefile`, `docs/03_CONTAINER_PHP_INSTALL.md`, `README.md`. Notes: Nouveau script `check-php-extensions.sh` pour vérifier automatiquement toutes les extensions PHP requises par Drupal 11 (pdo, pdo_pgsql, pgsql, gd, xml, zip, intl, opcache, bcmath, apcu). Affiche les détails de l'extension GD (bundled 2.1.0 compatible) avec support FreeType, JPEG, PNG, GIF. Commande `make php/check-extensions` ajoutée. Documentation enrichie avec exemples de vérification GD. ✅ Confirmation : GD library est bien installée et fonctionnelle.

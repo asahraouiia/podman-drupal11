@@ -14,7 +14,6 @@ services:
       - "8080:80"                    # Accès externe:interne
     volumes:
       - ./src:/var/www/html          # Code Drupal
-      - ./logs/apache:/var/log/apache2  # Logs Apache
     depends_on:
       - php                          # Démarre après PHP
     networks:
@@ -38,7 +37,6 @@ services:
     container_name: php
     volumes:
       - ./src:/var/www/html          # Code Drupal (partagé avec Apache)
-      - ./logs/php:/var/log/php      # Logs PHP-FPM
     networks:
       - drupal_net
     restart: unless-stopped
@@ -63,7 +61,6 @@ services:
       POSTGRES_DB: drupal            # Nom de la base
     volumes:
       - drupal_db_data:/var/lib/postgresql/data  # Données persistantes
-      - ./logs/postgres:/var/log/postgresql      # Logs PostgreSQL
     networks:
       - drupal_net
     restart: unless-stopped

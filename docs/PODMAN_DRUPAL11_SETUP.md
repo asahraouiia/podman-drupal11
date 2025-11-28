@@ -248,8 +248,10 @@ services:
       - drupal_net
 
   db:
-    image: postgres:15
+    image: postgres:16
     container_name: db
+    ports:
+      - "5432:5432"
     environment:
       POSTGRES_USER: drupal
       POSTGRES_PASSWORD: drupal
@@ -267,8 +269,10 @@ networks:
 ```
 
 Remarques :
+- **Important pour Windows/WSL** : Évitez les bind mounts de type `./logs/apache:/var/log/apache2` qui causent des erreurs de chemin `/mnt/c/`. Utilisez `podman logs <container>` pour accéder aux logs.
 - Les bind mounts utilisent `:Z` uniquement sur les systèmes SELinux; sous Windows/WSL utilisez simplement `./src:/var/www/html`.
 - Le service `web` écoute sur le port hôte `8080`.
+- PostgreSQL expose le port `5432` pour accès externe (DBeaver, VSCode, etc.).
 
 -------------------------
 4) Build et démarrage — commandes
@@ -445,6 +449,16 @@ podman exec -it php bash -lc "COMPOSER_MEMORY_LIMIT=-1 composer install"
 8) Volumes, permissions et notes Windows
 
 - Sous Linux, le bind `./src:/var/www/html` fonctionne directement. Sous Windows, préférez WSL2 pour de meilleures performances et permissions.
+- **Logs** : Utilisez `podman logs <container>` au lieu de bind mounts pour les logs. Les bind mounts de type `./logs/apache:/var/log/apache2` causent des erreurs de chemin `/mnt/c/` sous Windows/WSL.
+  ```bash
+  # Accéder aux logs en temps réel
+  podman logs -f web
+  podman logs -f php
+  podman logs -f db
+  
+  # Logs des 10 dernières minutes
+  podman logs --since 10m web
+  ```
 - Assurez-vous que `www-data` (ou l'UID du conteneur) peut écrire dans `sites/default/files`.
 - Sur Fedora/RHEL, ajoutez `:Z` aux mounts pour SELinux.
 
@@ -584,6 +598,9 @@ Ce guide est destiné au développement local. Pour la production :
 - **Validation** : si les tests passent et la modification est validée, mettre à jour la documentation immédiatement avec une note "Tests OK — documentation mise à jour" incluant date et auteur. Si les tests échouent, documenter l'échec et les actions correctives prévues.
 
 **Historique des changements récents** :
+- 2025-11-28 — asahraoui — Correction bind mounts logs sous Windows/WSL. Fichiers : `podman-compose.yml`. Notes : Suppression des volumes `./logs/apache`, `./logs/php`, `./logs/postgres` qui causaient des erreurs de chemin `/mnt/c/` sous WSL. Utiliser `podman logs <container>` pour accéder aux logs. Tests OK — documentation mise à jour.
+- 2025-11-28 — asahraoui — Ajout module custom Drupal `my_list_field` avec exemples de contrôle de save (FieldType extends ListItemBase, hook_entity_presave, EventSubscriber). Fichiers : `src/web/modules/custom/my_list_field/`. Tests OK.
+- 2025-11-27 — asahraoui — Ajout support WebP et AVIF dans GD pour optimisation images. Fichiers : `docker/php/Dockerfile`, `docs/03_CONTAINER_PHP_INSTALL.md`. Notes : WebP (~30% plus léger), AVIF (~50% plus léger). Tests OK.
 - 2025-11-25 — Mise à jour PostgreSQL 15 → 16, correction modules Apache obligatoires (proxy, proxy_fcgi, rewrite). Documentation mise à jour avec liste des modules requis vs recommandés. Tests OK.
 - 2025-11-25 — Script de gestion des modules Apache ajouté (`manage-apache-modules.sh/ps1`). Permet d'activer/désactiver facilement headers, expires, deflate, ssl, etc. Tests OK — documentation mise à jour.
 - 2025-11-25 — Clean URLs activés (mod_rewrite), scripts d'initialisation Podman/WSL ajoutés, migration vers `podman compose`. Tests OK — documentation mise à jour.
