@@ -1,0 +1,79 @@
+ps_dico_types.admin:
+  path: '/admin/structure/ps-dico-types'
+  defaults:
+    _entity_list: 'ps_dico_type'
+    _title: 'Dictionary Types'
+  requirements:
+    _permission: 'administer ps_dico_types'
+
+entity.ps_dico_type.collection:
+  path: '/admin/structure/ps-dico-types'
+  defaults:
+    _entity_list: 'ps_dico_type'
+    _title: 'Dictionary Types'
+  requirements:
+    _permission: 'administer ps_dico_types'
+
+entity.ps_dico_type.add_form:
+  path: '/admin/structure/ps-dico-types/add'
+  defaults:
+    _entity_form: 'ps_dico_type.add'
+    _title: 'Add Dictionary Type'
+  requirements:
+    _permission: 'administer ps_dico_types'
+
+entity.ps_dico_type.edit_form:
+  path: '/admin/structure/ps-dico-types/{ps_dico_type}/edit'
+  defaults:
+    _entity_form: 'ps_dico_type.edit'
+    _title: 'Edit Dictionary Type'
+  requirements:
+    _permission: 'administer ps_dico_types'
+
+entity.ps_dico_type.delete_form:
+  path: '/admin/structure/ps-dico-types/{ps_dico_type}/delete'
+  defaults:
+    _entity_form: 'ps_dico_type.delete'
+    _title: 'Delete Dictionary Type'
+  requirements:
+    _permission: 'administer ps_dico_types'
+
+entity.ps_dico.collection:
+  path: '/admin/structure/ps-dico-items'
+  defaults:
+    _entity_list: 'ps_dico'
+    _title: 'Dictionary Items'
+  requirements:
+    _permission: 'administer ps_dico_types'
+
+entity.ps_dico.type_collection:
+  path: '/admin/structure/ps-dico-types/{ps_dico_type}/dicos'
+  defaults:
+    _controller: '\Drupal\ps_dico_types\Controller\PsDicoListController::listing'
+    _title_callback: '\Drupal\ps_dico_types\Controller\PsDicoListController::title'
+  requirements:
+    _permission: 'administer ps_dico_types'
+
+entity.ps_dico.add_form:
+  path: '/admin/structure/ps-dico-items/add'
+  defaults:
+    _entity_form: 'ps_dico.add'
+    _title: 'Add Dictionary Item'
+  requirements:
+    _permission: 'administer ps_dico_types'
+
+entity.ps_dico.edit_form:
+  path: '/admin/structure/ps-dico-items/{ps_dico}/edit'
+  defaults:
+    _entity_form: 'ps_dico.edit'
+    _title: 'Edit Dictionary Item'
+  requirements:
+    _permission: 'administer ps_dico_types'
+
+entity.ps_dico.delete_form:
+  path: '/admin/structure/ps-dico-items/{ps_dico}/delete'
+  defaults:
+    _entity_form: 'ps_dico.delete'
+    _title: 'Delete Dictionary Item'
+  requirements:
+    _permission: 'administer ps_dico_types'

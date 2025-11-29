@@ -1,0 +1,4 @@
+administer ps_dico_types:
+  title: 'Administer dictionary types and items'
+  description: 'Create, edit, and delete dictionary types and dictionary items.'
+  restrict access: true

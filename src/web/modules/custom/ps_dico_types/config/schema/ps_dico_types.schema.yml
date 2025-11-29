@@ -1,0 +1,79 @@
+ps_dico_types.settings:
+  type: config_object
+  label: 'Dictionary Types settings'
+  mapping:
+    cache_ttl:
+      type: integer
+      label: 'Cache TTL for dictionary data (seconds)'
+    enable_telemetry:
+      type: boolean
+      label: 'Enable dictionary usage telemetry'
+
+ps_dico_type.*:
+  type: config_entity
+  label: 'Dictionary Type'
+  mapping:
+    id:
+      type: string
+      label: 'Machine name'
+    label:
+      type: label
+      label: 'Label'
+    description:
+      type: text
+      label: 'Description'
+    status:
+      type: boolean
+      label: 'Status'
+
+ps_dico.*:
+  type: config_entity
+  label: 'Dictionary Item'
+  mapping:
+    id:
+      type: string
+      label: 'Machine name'
+    label:
+      type: label
+      label: 'Label'
+    type:
+      type: string
+      label: 'Dictionary Type ID'
+    weight:
+      type: integer
+      label: 'Weight'
+    status:
+      type: boolean
+      label: 'Status'
+
+field.storage_settings.ps_dictionary:
+  type: mapping
+  label: 'Dictionary field storage settings'
+  mapping:
+    dictionary_type:
+      type: string
+      label: 'Dictionary Type'
+
+field.field_settings.ps_dictionary:
+  type: mapping
+  label: 'Dictionary field settings'
+  mapping:
+    dictionary_type:
+      type: string
+      label: 'Dictionary Type'
+
+field.widget.settings.ps_dictionary_select:
+  type: mapping
+  label: 'Dictionary select widget settings'
+  mapping:
+    size:
+      type: integer
+      label: 'Size of select'
+
+field.formatter.settings.ps_dictionary_label:
+  type: mapping
+  label: 'Dictionary label formatter settings'
+  mapping:
+    link_to_dico:
+      type: boolean
+      label: 'Link to dictionary item'

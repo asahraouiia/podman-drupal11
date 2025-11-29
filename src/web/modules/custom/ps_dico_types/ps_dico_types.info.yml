@@ -1,0 +1,7 @@
+name: 'PropertySearch Dictionary Types'
+type: module
+description: 'Provides configurable dictionary types and values (vocabulary-like structure).'
+core_version_requirement: ^11
+package: PropertySearch
+dependencies:
+  - drupal:options
