@@ -1,0 +1,19 @@
+uuid: b8082a3a-2712-4157-a34e-6f4070222317
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - ps_dico_types
+id: node.field_transaction_test
+field_name: field_transaction_test
+entity_type: node
+type: ps_dictionary
+settings: {  }
+module: ps_dico_types
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

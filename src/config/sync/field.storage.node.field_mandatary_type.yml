@@ -1,0 +1,19 @@
+uuid: 7b3152ad-cab4-4ed4-9c75-621ad93ff73f
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - ps_dico_types
+id: node.field_mandatary_type
+field_name: field_mandatary_type
+entity_type: node
+type: ps_dictionary
+settings: {  }
+module: ps_dico_types
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

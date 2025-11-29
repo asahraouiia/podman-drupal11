@@ -1,0 +1,8 @@
+uuid: bdf181ab-5b58-4604-a443-fc2b1cc0b772
+langcode: fr
+status: true
+dependencies: {  }
+id: b2b
+label: B2B
+type: mandate_type
+weight: '0'

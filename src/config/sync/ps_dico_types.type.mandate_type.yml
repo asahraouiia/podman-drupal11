@@ -1,0 +1,7 @@
+uuid: d529abaf-73a9-43c3-9951-75ba0fc85090
+langcode: fr
+status: true
+dependencies: {  }
+id: mandate_type
+label: 'Mandate type'
+description: ''

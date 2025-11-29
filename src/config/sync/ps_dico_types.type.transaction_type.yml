@@ -1,0 +1,7 @@
+uuid: 6aa702d9-56c9-4660-8aba-01ced9b99930
+langcode: fr
+status: true
+dependencies: {  }
+id: transaction_type
+label: 'Transaction Type'
+description: 'Types of property transactions'

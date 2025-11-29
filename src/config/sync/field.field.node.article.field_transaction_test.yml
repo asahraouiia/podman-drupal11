@@ -1,0 +1,21 @@
+uuid: 1cd11279-50bb-42d8-b7fd-172d0bcca4fc
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_transaction_test
+    - node.type.article
+  module:
+    - ps_dico_types
+id: node.article.field_transaction_test
+field_name: field_transaction_test
+entity_type: node
+bundle: article
+label: 'Transaction Test'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: ps_dictionary
