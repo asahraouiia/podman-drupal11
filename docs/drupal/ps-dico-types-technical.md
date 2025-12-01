@@ -120,9 +120,14 @@
 ]
 ```
 
+**Paramètres de stockage (Storage Settings)** :
+- `dictionary_type` (string, requis) : ID du PsDicoType à utiliser pour filtrer les options du widget
+
 **Méthodes publiques** :
+- `defaultStorageSettings(): array` - Retourne `['dictionary_type' => '']`
+- `storageSettingsForm(array &$form, FormStateInterface $form_state, $has_data): array` - Formulaire de configuration du type de dictionnaire (désactivé si le champ contient des données)
 - `isEmpty(): bool` - Vérifie si le champ est vide
-- `getEntity(): ?PsDicoInterface` - Charge et retourne l'entité PsDico référencée
+- `getEntity(): ?PsDicoInterface` - Charge et retourne l'entité PsDico référencée (avec cache local pour éviter les rechargements répétés)
 
 ### Widget PsDictionarySelectWidget
 
@@ -137,13 +142,14 @@
 )
 ```
 
-**Paramètres (settings)** :
-- `dictionary_type` (string, requis) : ID du PsDicoType à utiliser pour filtrer les options
-
 **Comportement** :
-1. Charge tous les PsDico ayant `type = dictionary_type`
-2. Trie par `weight` ASC, puis par `label` (alphabétique)
-3. Génère un select avec les options filtrées
+1. Lit le paramètre `dictionary_type` depuis les paramètres de stockage du champ (Field Storage Settings)
+2. Charge tous les PsDico ayant `type = dictionary_type`
+3. Trie par `weight` ASC, puis par `label` (alphabétique)
+4. Génère un select avec les options filtrées
+
+**Note importante** :
+Le widget ne possède plus de paramètre `dictionary_type` dans ses propres settings. Ce paramètre est maintenant configuré au niveau du stockage du champ (voir `PsDictionaryItem::storageSettingsForm()`), ce qui suit le pattern Drupal des champs de référence d'entité (comme `entity_reference` avec `target_type`).
 
 **Injection de dépendances** :
 - `EntityTypeManagerInterface` pour charger les entités

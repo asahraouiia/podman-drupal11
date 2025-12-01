@@ -1,20 +1,20 @@
-uuid: 1cd11279-50bb-42d8-b7fd-172d0bcca4fc
+uuid: 273d3c53-a0fa-4c4e-91fb-286f7242a877
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.storage.node.field_transaction_test
+    - field.storage.node.field_mondatary_type
     - node.type.article
   module:
     - ps_dico_types
-id: node.article.field_transaction_test
-field_name: field_transaction_test
+id: node.article.field_mondatary_type
+field_name: field_mondatary_type
 entity_type: node
 bundle: article
-label: 'Transaction Test'
+label: 'Mondatary type'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

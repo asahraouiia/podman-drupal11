@@ -6,9 +6,9 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_image
-    - field.field.node.article.field_mandatary_type
+    - field.field.node.article.field_mondatary_type
     - field.field.node.article.field_tags
-    - field.field.node.article.field_transaction_test
+    - field.field.node.article.field_transaction_type
     - image.style.thumbnail
     - node.type.article
   module:
@@ -54,12 +54,11 @@ content:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-  field_mandatary_type:
+  field_mondatary_type:
     type: ps_dictionary_select
-    weight: 13
+    weight: 27
     region: content
-    settings:
-      dictionary_type: mandate_type
+    settings: {  }
     third_party_settings: {  }
   field_tags:
     type: entity_reference_autocomplete_tags
@@ -71,12 +70,11 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_transaction_test:
+  field_transaction_type:
     type: ps_dictionary_select
-    weight: 12
+    weight: 26
     region: content
-    settings:
-      dictionary_type: transaction_type
+    settings: {  }
     third_party_settings: {  }
   langcode:
     type: language_select

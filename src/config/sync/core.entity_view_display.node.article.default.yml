@@ -7,9 +7,9 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_image
-    - field.field.node.article.field_mandatary_type
+    - field.field.node.article.field_mondatary_type
     - field.field.node.article.field_tags
-    - field.field.node.article.field_transaction_test
+    - field.field.node.article.field_transaction_type
     - image.style.wide
     - node.type.article
   module:
@@ -52,13 +52,13 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
-  field_mandatary_type:
+  field_mondatary_type:
     type: ps_dictionary_label
     label: above
     settings:
-      link_to_entity: 0
+      link_to_entity: false
     third_party_settings: {  }
-    weight: 0
+    weight: 8
     region: content
   field_tags:
     type: entity_reference_label
@@ -68,13 +68,13 @@ content:
     third_party_settings: {  }
     weight: 4
     region: content
-  field_transaction_test:
+  field_transaction_type:
     type: ps_dictionary_label
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 1
+    weight: 7
     region: content
   links:
     settings: {  }

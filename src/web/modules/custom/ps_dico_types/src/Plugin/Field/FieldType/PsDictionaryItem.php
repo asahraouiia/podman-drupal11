@@ -4,7 +4,9 @@ namespace Drupal\ps_dico_types\Plugin\Field\FieldType;
 
 use Drupal\Core\Field\FieldItemBase;
 use Drupal\Core\Field\FieldStorageDefinitionInterface;
+use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\TypedData\DataDefinition;
+use Drupal\ps_dico_types\PsDicoInterface;
 
 /**
  * Plugin implementation of the 'ps_dictionary' field type.
@@ -18,6 +20,49 @@ use Drupal\Core\TypedData\DataDefinition;
  * )
  */
 class PsDictionaryItem extends FieldItemBase {
+
+  /**
+   * Cached loaded dictionary entity for this field item.
+   *
+   * @var \Drupal\ps_dico_types\PsDicoInterface|null
+   */
+  protected ?PsDicoInterface $entity = NULL;
+
+  /**
+   * {@inheritdoc}
+   */
+  public static function defaultStorageSettings() {
+    return [
+      'dictionary_type' => '',
+    ] + parent::defaultStorageSettings();
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function storageSettingsForm(array &$form, FormStateInterface $form_state, $has_data) {
+    $elements = [];
+
+    // Load available dictionary types.
+    $entity_type_manager = \Drupal::entityTypeManager();
+    $types = $entity_type_manager->getStorage('ps_dico_type')->loadMultiple();
+    $type_options = ['' => $this->t('- Select a dictionary type -')];
+    foreach ($types as $type) {
+      $type_options[$type->id()] = $type->label();
+    }
+
+    $elements['dictionary_type'] = [
+      '#type' => 'select',
+      '#title' => $this->t('Dictionary Type'),
+      '#options' => $type_options,
+      '#default_value' => $this->getSetting('dictionary_type'),
+      '#required' => TRUE,
+      '#disabled' => $has_data,
+      '#description' => $this->t('Select the dictionary type to use for this field. Cannot be changed once data exists.'),
+    ];
+
+    return $elements;
+  }
 
   /**
    * {@inheritdoc}
@@ -63,14 +108,24 @@ class PsDictionaryItem extends FieldItemBase {
    * @return \Drupal\ps_dico_types\PsDicoInterface|null
    *   The dictionary item entity, or NULL if not found.
    */
-  public function getEntity() {
-    $value = $this->get('value')->getValue();
-    if ($value) {
-      return \Drupal::entityTypeManager()
-        ->getStorage('ps_dico')
-        ->load($value);
+  public function getEntity(): ?PsDicoInterface {
+    dump($this->entity);die;
+    if ($this->entity !== NULL) {
+      return $this->entity;
     }
-    return NULL;
+
+    $value = $this->get('value')->getValue();
+    if (!$value) {
+      return NULL;
+    }
+
+    $loaded = \Drupal::entityTypeManager()
+      ->getStorage('ps_dico')
+      ->load($value);
+
+    // Only cache if the loaded entity implements the expected interface.
+    $this->entity = $loaded instanceof PsDicoInterface ? $loaded : NULL;
+    return $this->entity;
   }
 
 }

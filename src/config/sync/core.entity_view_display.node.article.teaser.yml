@@ -7,9 +7,9 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_image
-    - field.field.node.article.field_mandatary_type
+    - field.field.node.article.field_mondatary_type
     - field.field.node.article.field_tags
-    - field.field.node.article.field_transaction_test
+    - field.field.node.article.field_transaction_type
     - image.style.medium
     - node.type.article
   module:
@@ -55,6 +55,6 @@ content:
     region: content
 hidden:
   comment: true
-  field_mandatary_type: true
-  field_transaction_test: true
+  field_mondatary_type: true
+  field_transaction_type: true
   langcode: true

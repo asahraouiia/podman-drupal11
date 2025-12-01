@@ -1,17 +1,17 @@
-uuid: 3998a353-f2f8-4c78-b27b-7ada04d6c6c9
+uuid: a16f6140-27b8-4a47-acfc-d2560dca38a4
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.storage.node.field_mandatary_type
+    - field.storage.node.field_transaction_type
     - node.type.article
   module:
     - ps_dico_types
-id: node.article.field_mandatary_type
-field_name: field_mandatary_type
+id: node.article.field_transaction_type
+field_name: field_transaction_type
 entity_type: node
 bundle: article
-label: 'Mandatary type'
+label: 'Transaction type'
 description: ''
 required: false
 translatable: false

@@ -1,15 +1,16 @@
-uuid: b8082a3a-2712-4157-a34e-6f4070222317
+uuid: fffa8c78-28dc-4d3b-a918-7c378e336b4f
 langcode: fr
 status: true
 dependencies:
   module:
     - node
     - ps_dico_types
-id: node.field_transaction_test
-field_name: field_transaction_test
+id: node.field_mondatary_type
+field_name: field_mondatary_type
 entity_type: node
 type: ps_dictionary
-settings: {  }
+settings:
+  dictionary_type: mandate_type
 module: ps_dico_types
 locked: false
 cardinality: 1

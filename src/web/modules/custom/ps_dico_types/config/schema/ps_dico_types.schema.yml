@@ -52,23 +52,15 @@ field.storage_settings.ps_dictionary:
   mapping:
     dictionary_type:
       type: string
-      label: 'Dictionary Type'
+      label: 'Dictionary Type ID'
 
 field.field_settings.ps_dictionary:
   type: mapping
   label: 'Dictionary field settings'
-  mapping:
-    dictionary_type:
-      type: string
-      label: 'Dictionary Type'
 
 field.widget.settings.ps_dictionary_select:
   type: mapping
   label: 'Dictionary select widget settings'
-  mapping:
-    size:
-      type: integer
-      label: 'Size of select'
 
 field.formatter.settings.ps_dictionary_label:
   type: mapping

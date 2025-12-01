@@ -28,9 +28,11 @@ Le module fournit un type de champ réutilisable :
 - **Widget** : `ps_dictionary_select` - Select configuré avec filtrage par type
 - **Formatter** : `ps_dictionary_label` - Affiche le label avec option de lien
 
-#### Configuration du widget
+#### Configuration du champ (Field Storage)
 
-Le widget dispose d'un paramètre `dictionary_type` permettant de sélectionner le type de dictionnaire. Les éléments affichés dans le select sont automatiquement filtrés selon ce type et triés par poids puis par label.
+Le type de champ dispose d'un paramètre de stockage `dictionary_type` permettant de sélectionner le type de dictionnaire à utiliser. Cette configuration se fait au niveau du stockage du champ (Field Storage Settings) lors de la création du champ, et ne peut pas être modifiée une fois que le champ contient des données.
+
+Les éléments affichés dans le widget select sont automatiquement filtrés selon le `dictionary_type` configuré au niveau du stockage et triés par poids puis par label.
 
 #### Configuration du formatter
 
@@ -57,9 +59,9 @@ Des boutons d'action sont disponibles sur chaque page de liste :
 2. Ajoutez un champ Dictionary sur un type de contenu (ex: Article)
    - Menu: Structure → Content types → Article → Manage fields → Add field → Dictionary
    - Label: Transaction Test (exemple)
-3. Configurez le widget du champ
-   - Menu: Manage form display → Engrenage (⚙️) du champ → sélectionnez "Dictionary Type" = `transaction_type`
-4. Créez/éditez un contenu Article et choisissez une valeur dans la liste filtrée
+   - **Important** : Dans les paramètres de stockage du champ (Field Storage Settings), sélectionnez "Dictionary Type" = `transaction_type`
+   - Note: Ce paramètre ne pourra plus être modifié une fois que le champ contient des données
+3. Créez/éditez un contenu Article et choisissez une valeur dans la liste filtrée
 
 ### Création d'un type de dictionnaire
 
@@ -79,11 +81,12 @@ Des boutons d'action sont disponibles sur chaque page de liste :
 
 ## Dépannage
 
-- Le paramètre du widget "Dictionary Type" n'apparaît pas
-   - Vérifiez que le widget utilisé est bien `Dictionary select` (ps_dictionary_select)
+- Le paramètre "Dictionary Type" n'apparaît pas lors de la création du champ
+   - Le paramètre "Dictionary Type" se trouve dans les **Field Storage Settings**, pas dans les paramètres du widget
+   - Lors de l'ajout d'un nouveau champ Dictionary, ce paramètre apparaît dans le formulaire de configuration initial
+   - Pour modifier un champ existant: Structure → Content types → [Type] → Manage fields → [Champ] → Field settings → Edit (en haut)
+   - Note: Si le champ contient déjà des données, ce paramètre sera désactivé pour préserver l'intégrité des données
    - Videz les caches: `make drush/cr` ou `podman exec php vendor/bin/drush cr`
-   - Assurez-vous que le module `ps_dico_types` est activé
-   - Si nécessaire, re-sauvegardez l'affichage de formulaire (Manage form display)
 
 - Erreur de route manquante lors de la navigation
    - Les pages d'administration sont:

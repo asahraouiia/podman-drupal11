@@ -76,35 +76,10 @@ class PsDictionarySelectWidget extends WidgetBase implements ContainerFactoryPlu
    * {@inheritdoc}
    */
   public static function defaultSettings() {
-    return [
-      'dictionary_type' => '',
-    ] + parent::defaultSettings();
+    return [] + parent::defaultSettings();
   }
 
-  /**
-   * {@inheritdoc}
-   */
-  public function settingsForm(array $form, FormStateInterface $form_state) {
-    $elements = parent::settingsForm($form, $form_state);
 
-    // Load available dictionary types.
-    $types = $this->entityTypeManager->getStorage('ps_dico_type')->loadMultiple();
-    $type_options = ['' => $this->t('- Select a dictionary type -')];
-    foreach ($types as $type) {
-      $type_options[$type->id()] = $type->label();
-    }
-
-    $elements['dictionary_type'] = [
-      '#type' => 'select',
-      '#title' => $this->t('Dictionary Type'),
-      '#options' => $type_options,
-      '#default_value' => $this->getSetting('dictionary_type'),
-      '#description' => $this->t('Select the dictionary type to filter items.'),
-      '#required' => TRUE,
-    ];
-
-    return $elements;
-  }
 
   /**
    * {@inheritdoc}
@@ -112,7 +87,8 @@ class PsDictionarySelectWidget extends WidgetBase implements ContainerFactoryPlu
   public function settingsSummary() {
     $summary = [];
     
-    $type_id = $this->getSetting('dictionary_type');
+    // Read dictionary_type from field storage settings
+    $type_id = $this->fieldDefinition->getFieldStorageDefinition()->getSetting('dictionary_type');
     if ($type_id) {
       $type = $this->entityTypeManager->getStorage('ps_dico_type')->load($type_id);
       $summary[] = $this->t('Dictionary type: @type', [
@@ -120,7 +96,7 @@ class PsDictionarySelectWidget extends WidgetBase implements ContainerFactoryPlu
       ]);
     }
     else {
-      $summary[] = $this->t('No dictionary type selected');
+      $summary[] = $this->t('Dictionary type not configured');
     }
 
     return $summary;
@@ -130,11 +106,12 @@ class PsDictionarySelectWidget extends WidgetBase implements ContainerFactoryPlu
    * {@inheritdoc}
    */
   public function formElement(FieldItemListInterface $items, $delta, array $element, array &$form, FormStateInterface $form_state) {
-    $type_id = $this->getSetting('dictionary_type');
+    // Read dictionary_type from field storage settings
+    $type_id = $this->fieldDefinition->getFieldStorageDefinition()->getSetting('dictionary_type');
     
     if (!$type_id) {
       $element['value'] = [
-        '#markup' => $this->t('Please configure the dictionary type in the field settings.'),
+        '#markup' => $this->t('Please configure the dictionary type in the field storage settings.'),
       ];
       return $element;
     }
