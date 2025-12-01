@@ -8,7 +8,7 @@ dependencies:
 _core:
   default_config_hash: CHAjzSss2YXSSIH7snaB7Zc9GEubxXtV0XE--SpzCB8
 id: comment
-label: Comments
+label: Commentaires
 module: comment
 description: 'Find and manage comments.'
 tag: default
@@ -21,7 +21,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: Comments
+      title: Commentaires
       fields:
         comment_bulk_form:
           id: comment_bulk_form
@@ -422,7 +422,7 @@ display:
           admin_label: ''
           entity_type: comment
           plugin_id: entity_operations
-          label: Operations
+          label: Actions
           exclude: false
           alter:
             alter_text: false
@@ -554,7 +554,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filter
+          submit_button: Filtrer
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -736,7 +736,7 @@ display:
           exposed: true
           expose:
             operator_id: langcode_op
-            label: Language
+            label: Langue
             description: ''
             use_operator: false
             operator: langcode_op
@@ -883,7 +883,7 @@ display:
       path: admin/content/comment
       menu:
         type: tab
-        title: Comments
+        title: Commentaires
         description: 'Comments published'
         weight: 0
         menu_name: admin
@@ -1305,7 +1305,7 @@ display:
           admin_label: ''
           entity_type: comment
           plugin_id: entity_operations
-          label: Operations
+          label: Actions
           exclude: false
           alter:
             alter_text: false
@@ -1550,7 +1550,7 @@ display:
           exposed: true
           expose:
             operator_id: langcode_op
-            label: Language
+            label: Langue
             description: ''
             use_operator: false
             operator: langcode_op
