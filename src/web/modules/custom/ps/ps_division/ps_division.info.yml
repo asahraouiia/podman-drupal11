@@ -1,0 +1,11 @@
+name: 'PropertySearch Division'
+type: module
+description: 'Minimal division entity with surfaces field type and dictionary integration.'
+package: PropertySearch
+core_version_requirement: ^11
+dependencies:
+  - drupal:system
+  - drupal:field
+  - drupal:text
+  - ps:ps
+  - ps_dictionary:ps_dictionary

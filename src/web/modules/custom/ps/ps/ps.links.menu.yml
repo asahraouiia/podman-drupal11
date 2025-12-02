@@ -1,0 +1,27 @@
+ps.admin:
+  title: 'PropertySearch'
+  description: 'PropertySearch platform administration'
+  parent: system.admin
+  route_name: ps.admin
+  weight: -5
+
+ps.admin_structure:
+  title: 'Structure'
+  description: 'Manage PropertySearch structure (entities, dictionaries, features)'
+  parent: ps.admin
+  route_name: ps.admin_structure
+  weight: 5
+
+ps.admin_config_overview:
+  title: 'Configuration'
+  description: 'Configure PropertySearch modules settings'
+  parent: ps.admin
+  route_name: ps.admin_config_overview
+  weight: 10
+
+ps.health:
+  title: 'Health Check'
+  description: 'View system health status'
+  parent: ps.admin
+  route_name: ps.health
+  weight: 20

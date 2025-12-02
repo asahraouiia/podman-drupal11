@@ -1,0 +1,11 @@
+uuid: null
+langcode: en
+status: true
+id: offer_status_under_offer
+dictionary_type: offer_status
+code: UNDER_OFFER
+label: 'Under Offer'
+description: 'Offer is under negotiation'
+weight: 1
+deprecated: false
+metadata: []

@@ -1,0 +1,11 @@
+<?php
+
+/**
+ * @file
+ * Procedural hooks for ps_diagnostic module.
+ *
+ * All hook implementations are in src/Hook/PsDiagnosticHooks.php.
+ * This file is kept for legacy compatibility only.
+ */
+
+declare(strict_types=1);

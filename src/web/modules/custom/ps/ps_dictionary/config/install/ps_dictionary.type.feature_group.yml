@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: feature_group
+label: 'Feature Group'
+description: 'Groups organizing features for display (equipments, services, building condition, more information).'
+is_translatable: false
+locked: true
+weight: 0

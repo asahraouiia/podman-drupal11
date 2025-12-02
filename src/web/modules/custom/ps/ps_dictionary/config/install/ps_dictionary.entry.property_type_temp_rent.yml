@@ -1,0 +1,11 @@
+uuid: null
+langcode: en
+status: true
+id: property_type_temp_rent
+dictionary_type: property_type
+code: TEMP_RENT
+label: 'Temporary Rent'
+description: 'Short-term rental'
+weight: 3
+deprecated: false
+metadata: []

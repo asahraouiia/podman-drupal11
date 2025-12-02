@@ -1,0 +1,14 @@
+entity.ps_dictionary_type.collection:
+  title: 'Dictionaries'
+  description: 'Manage business dictionaries'
+  route_name: entity.ps_dictionary_type.collection
+  parent: ps.admin_structure
+  weight: 20
+
+ps_dictionary.settings:
+  title: 'Dictionary'
+  description: 'Configure dictionary behavior'
+  route_name: ps_dictionary.settings
+  parent: ps.admin_config_overview
+  weight: 30
+

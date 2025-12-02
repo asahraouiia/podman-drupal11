@@ -1,0 +1,11 @@
+uuid: null
+langcode: en
+status: true
+id: transaction_type_office
+dictionary_type: transaction_type
+code: OFFICE
+label: 'Office'
+description: 'Office spaces'
+weight: 0
+deprecated: false
+metadata: []

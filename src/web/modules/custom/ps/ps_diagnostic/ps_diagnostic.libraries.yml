@@ -1,0 +1,13 @@
+ps_diagnostic/diagnostic_display:
+  version: 1.x
+  css:
+    theme:
+      assets/css/diagnostic-display.css: {}
+
+ps_diagnostic/diagnostic_type_form:
+  version: 1.x
+  css:
+    theme:
+      assets/css/diagnostic-type-form.css: {}
+  dependencies:
+    - core/drupal.tabledrag

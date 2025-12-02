@@ -1,0 +1,13 @@
+uuid: null
+langcode: en
+status: true
+id: diagnostic_type_ges
+dictionary_type: diagnostic_type
+code: GES
+label: 'GES (Greenhouse Gas)'
+description: 'Greenhouse Gas Emissions'
+weight: 10
+deprecated: false
+metadata:
+  full_name: 'Gaz à Effet de Serre'
+  category: 'environmental'

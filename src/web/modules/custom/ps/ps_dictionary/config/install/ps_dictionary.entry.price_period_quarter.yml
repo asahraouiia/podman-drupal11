@@ -1,0 +1,13 @@
+uuid: null
+langcode: en
+status: true
+id: price_period_quarter
+dictionary_type: price_period
+code: QUARTER
+label: 'Per quarter'
+description: 'Quarterly period (3 months)'
+weight: 20
+deprecated: false
+metadata:
+  months: 3
+  abbreviation: '/quarter'

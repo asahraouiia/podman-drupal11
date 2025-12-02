@@ -1,0 +1,13 @@
+uuid: null
+langcode: en
+status: true
+id: office
+label: 'Office - Location'
+transaction_type: OFFICE
+unit_code: M2
+period_code: YEAR
+currency_code: EUR
+is_vat_excluded: true
+is_charges_included: false
+weight: 0
+locked: true

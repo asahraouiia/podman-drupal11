@@ -1,0 +1,13 @@
+uuid: null
+langcode: en
+status: true
+id: price_period_year
+dictionary_type: price_period
+code: YEAR
+label: 'Per year'
+description: 'Annual period'
+weight: 0
+deprecated: false
+metadata:
+  months: 12
+  abbreviation: '/year'

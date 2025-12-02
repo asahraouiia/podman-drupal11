@@ -1,0 +1,110 @@
+/**
+ * @file
+ * Styles for diagnostic energy class display with SVG horizontal bar.
+ */
+
+/* Horizontal SVG bar layout (official DPE/GES style) */
+.ps-diagnostic--horizontal {
+  position: relative;
+  margin: 1em 0;
+  max-width: 400px;
+}
+
+.ps-diagnostic--horizontal figcaption h3 {
+  margin: 0 0 0.5em 0;
+  font-size: 1em;
+  font-weight: 600;
+  color: #333;
+}
+
+.ps-diagnostic--horizontal .ps-diagnostic__svg {
+  display: block;
+  margin: 0 auto;
+}
+
+.ps-diagnostic--horizontal .ps-diagnostic__legend {
+  position: absolute;
+  top: 50px;
+  font-size: 0.9em;
+  font-weight: 600;
+  white-space: nowrap;
+  color: #333;
+}
+
+.ps-diagnostic--horizontal .ps-diagnostic__dates {
+  margin-top: 0.75em;
+  font-size: 0.85em;
+  color: #666;
+}
+
+.ps-diagnostic--horizontal .ps-diagnostic__date-from,
+.ps-diagnostic--horizontal .ps-diagnostic__date-to {
+  margin-right: 1em;
+}
+
+/* Simple fallback layout */
+.ps-diagnostic--simple {
+  margin: 1em 0;
+}
+
+.ps-diagnostic--simple .ps-diagnostic__bar {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  min-width: 80px;
+  text-align: center;
+}
+
+.ps-diagnostic--simple .ps-diagnostic__value {
+  margin-top: 0.5em;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+/* Special states (?, N/A) */
+.ps-diagnostic__special {
+  padding: 1em;
+  background-color: #f5f5f5;
+  border: 2px dashed #ccc;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.ps-diagnostic__class--special {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background-color: #999;
+  color: #fff;
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 50%;
+}
+
+.ps-diagnostic__message {
+  margin-top: 0.5em;
+  color: #666;
+  font-style: italic;
+}
+
+/* Validity dates */
+.ps-diagnostic__dates {
+  margin-top: 0.5em;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.ps-diagnostic__date-from,
+.ps-diagnostic__date-to {
+  margin-right: 1em;
+}
+
+/* Empty state styling (gray cursor and hide legend) */
+.ps-diagnostic--empty .ps-diagnostic__legend {
+  display: none;
+}

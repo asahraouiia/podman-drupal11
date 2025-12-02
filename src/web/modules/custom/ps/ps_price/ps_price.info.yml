@@ -1,0 +1,11 @@
+name: 'PropertySearch Price'
+type: module
+description: 'Provides structured price field type with formatters and normalization services.'
+package: PropertySearch
+core_version_requirement: ^11
+dependencies:
+  - drupal:field
+  - drupal:system
+  - ps:ps
+  - ps_dictionary:ps_dictionary
+configure: ps_price.settings

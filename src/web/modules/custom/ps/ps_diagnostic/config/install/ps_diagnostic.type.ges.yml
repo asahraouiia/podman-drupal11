@@ -1,0 +1,32 @@
+id: ges
+label: 'Greenhouse gas emissions'
+unit: 'kg CO₂/m²/year'
+classes:
+  a:
+    label: A
+    color: '#F4E4F7'
+    range_max: 6
+  b:
+    label: B
+    color: '#E1C5E8'
+    range_max: 11
+  c:
+    label: C
+    color: '#C39BD3'
+    range_max: 30
+  d:
+    label: D
+    color: '#9B59B6'
+    range_max: 50
+  e:
+    label: E
+    color: '#7D3C98'
+    range_max: 70
+  f:
+    label: F
+    color: '#5B2C6F'
+    range_max: 100
+  g:
+    label: G
+    color: '#4A235A'
+    range_max: null

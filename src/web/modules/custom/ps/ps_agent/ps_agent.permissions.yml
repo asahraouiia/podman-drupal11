@@ -1,0 +1,24 @@
+administer agent entities:
+  title: 'Administer agents'
+  description: 'Allows to manage agent entity configuration.'
+  restrict access: true
+
+view agent entities:
+  title: 'View agents'
+  description: 'Allows to view agent entities.'
+
+create agent entities:
+  title: 'Create agents'
+  description: 'Allows to create new agent entities.'
+
+edit agent entities:
+  title: 'Edit agents'
+  description: 'Allows to edit agent entities.'
+
+delete agent entities:
+  title: 'Delete agents'
+  description: 'Allows to delete agent entities.'
+
+edit agent internal data:
+  title: 'Edit agent internal data'
+  description: 'Allows to edit BO-specific internal data (notes, etc).'

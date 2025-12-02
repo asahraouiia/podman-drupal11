@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - ps_dictionary.type.price_unit
+id: price_unit_m2
+dictionary_type: price_unit
+code: M2
+label: 'm²'
+description: 'Square meter'
+weight: 0
+deprecated: false

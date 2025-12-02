@@ -1,0 +1,12 @@
+uuid: null
+langcode: en
+status: true
+id: agent_role_property_manager
+dictionary_type: agent_role
+code: PROPERTY_MANAGER
+label: 'Property Manager'
+description: 'Agent managing the property on behalf of owner'
+weight: 20
+deprecated: false
+metadata:
+  responsibility: 'management'

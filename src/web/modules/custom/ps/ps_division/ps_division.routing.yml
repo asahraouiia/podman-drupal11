@@ -1,0 +1,39 @@
+ps_division.collection:
+  path: '/admin/ps/structure/divisions'
+  defaults:
+    _entity_list: 'ps_division'
+    _title: 'Divisions'
+  requirements:
+    _permission: 'administer ps_division entities'
+
+ps_division.add:
+  path: '/admin/ps/structure/divisions/add'
+  defaults:
+    _entity_form: 'ps_division.add'
+    _title: 'Add Division'
+  requirements:
+    _permission: 'administer ps_division entities'
+
+entity.ps_division.canonical:
+  path: '/division/{ps_division}'
+  defaults:
+    _entity_view: 'ps_division'
+    _title_callback: '\Drupal\Core\Entity\Controller\EntityController::title'
+  requirements:
+    _permission: 'view division entities'
+
+entity.ps_division.edit_form:
+  path: '/admin/ps/structure/divisions/{ps_division}/edit'
+  defaults:
+    _entity_form: 'ps_division.edit'
+    _title: 'Edit Division'
+  requirements:
+    _permission: 'administer ps_division entities'
+
+entity.ps_division.delete_form:
+  path: '/admin/ps/structure/divisions/{ps_division}/delete'
+  defaults:
+    _entity_form: 'ps_division.delete'
+    _title: 'Delete Division'
+  requirements:
+    _permission: 'administer ps_division entities'

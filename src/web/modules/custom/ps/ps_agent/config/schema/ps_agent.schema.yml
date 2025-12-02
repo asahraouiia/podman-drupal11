@@ -1,0 +1,19 @@
+ps_agent.settings:
+  type: config_object
+  label: 'Agent settings'
+  mapping:
+    bo_editable_fields:
+      type: sequence
+      label: 'BO Editable Fields'
+      sequence:
+        type: string
+        label: 'Field Name'
+    require_email:
+      type: boolean
+      label: 'Email Required'
+    require_phone:
+      type: boolean
+      label: 'Phone Required'
+    validate_phone_format:
+      type: boolean
+      label: 'Validate Phone Format'

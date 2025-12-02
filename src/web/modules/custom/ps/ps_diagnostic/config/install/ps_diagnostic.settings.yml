@@ -1,0 +1,9 @@
+surface_round_precision: 2
+enable_completeness_score: true
+flags_definition:
+  - dpe_valid
+  - ges_valid
+  - surface_certified
+  - missing_energy_doc
+  - surface_incoherent
+  - invalid_energy_class

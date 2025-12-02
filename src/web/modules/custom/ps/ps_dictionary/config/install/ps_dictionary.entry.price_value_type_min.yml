@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - ps_dictionary.type.price_value_type
+id: price_value_type_min
+dictionary_type: price_value_type
+code: MIN
+label: 'Minimum'
+weight: 0

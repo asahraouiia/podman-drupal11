@@ -1,0 +1,11 @@
+uuid: null
+langcode: en
+status: true
+id: offer_status_withdrawn
+dictionary_type: offer_status
+code: WITHDRAWN
+label: 'Withdrawn'
+description: 'Offer has been withdrawn from market'
+weight: 3
+deprecated: false
+metadata: []

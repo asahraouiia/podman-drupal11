@@ -1,0 +1,11 @@
+uuid: null
+langcode: en
+status: true
+id: heating_system_type_electric
+dictionary_type: heating_system_type
+code: ELECTRIC
+label: 'Electric'
+description: 'Electric heating system'
+weight: 2
+deprecated: false
+metadata: []

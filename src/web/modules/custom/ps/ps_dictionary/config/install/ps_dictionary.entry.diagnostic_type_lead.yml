@@ -1,0 +1,13 @@
+uuid: null
+langcode: en
+status: true
+id: diagnostic_type_lead
+dictionary_type: diagnostic_type
+code: LEAD
+label: 'Lead (CREP)'
+description: 'Lead paint detection'
+weight: 30
+deprecated: false
+metadata:
+  full_name: "Constat de Risque d'Exposition au Plomb"
+  category: 'health'

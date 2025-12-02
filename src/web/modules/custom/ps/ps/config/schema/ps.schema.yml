@@ -1,0 +1,51 @@
+ps.settings:
+  type: config_object
+  label: 'PropertySearch settings'
+  mapping:
+    performance:
+      type: mapping
+      label: 'Performance settings'
+      mapping:
+        enable_monitoring:
+          type: boolean
+          label: 'Enable performance monitoring'
+        slow_request_threshold:
+          type: integer
+          label: 'Slow request threshold (ms)'
+    validation:
+      type: mapping
+      label: 'Validation settings'
+      mapping:
+        strict_mode:
+          type: boolean
+          label: 'Enable strict validation mode'
+    notification:
+      type: mapping
+      label: 'Notification settings'
+      mapping:
+        default_channel:
+          type: string
+          label: 'Default notification channel'
+        retry_attempts:
+          type: integer
+          label: 'Number of retry attempts'
+
+ps.field_type_categories:
+  type: config_object
+  label: 'Feature field type categories'
+  mapping:
+    PropertySearch:
+      type: mapping
+      label: 'PropertySearch field types category'
+      mapping:
+        label:
+          type: label
+          translatable: true
+          label: 'Label'
+        description:
+          type: text
+          translatable: true
+          label: 'Description'
+        weight:
+          type: integer
+          label: 'Weight'

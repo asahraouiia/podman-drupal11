@@ -1,0 +1,8 @@
+access ps administration:
+  title: 'Access PropertySearch administration'
+  description: 'Access PropertySearch admin pages and configuration'
+  restrict access: true
+
+view ps telemetry:
+  title: 'View PropertySearch telemetry'
+  description: 'View system health checks and performance metrics'

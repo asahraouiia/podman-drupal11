@@ -1,0 +1,125 @@
+{#
+/**
+ * @file
+ * Template for diagnostic energy class display (SVG horizontal bar).
+ *
+ * Available variables:
+ * - display_info: Array with class, color, unit, display_text, is_special
+ * - value: Numeric value
+ * - valid_from: Start date
+ * - valid_to: End date
+ * - layout: Layout type (horizontal, vertical, compact)
+ * - diagnostic_type: PsDiagnosticType entity
+ * - all_classes: Array of all classes (a-g) with label, color, range_max
+ * - is_dimmed: Boolean indicating empty state
+ * - dim_opacity: Opacity percentage (10-90) for dimmed state
+ */
+#}
+{# Compute opacity value from formatter settings #}
+{% set bar_opacity = (is_dimmed ?? false) ? ((dim_opacity ?? 30) / 100) : 1 %}
+
+{% if layout == 'horizontal' and not display_info.is_special and all_classes|length > 0 %}
+  <figure class="ps-diagnostic ps-diagnostic--horizontal {{ (is_dimmed ?? false) ? 'ps-diagnostic--empty' }}" data-class="{{ display_info.class }}" data-once="diagnostic-init">
+    <figcaption>
+      <h3>{{ diagnostic_type ? diagnostic_type.label : 'Diagnostic'|t }}</h3>
+    </figcaption>
+    
+    <svg class="ps-diagnostic__svg class-{{ display_info.class|default('unknown') }}" width="280" height="40" version="1.1" viewBox="0 0 280 40" xmlns="http://www.w3.org/2000/svg">
+      <g id="bar" stroke-width="0" opacity="{{ bar_opacity }}">
+        {% set x_pos = 0 %}
+        {% for class_code, class_data in all_classes %}
+          <rect 
+            id="r{{ class_data.label|upper }}" 
+            x="{{ x_pos }}" 
+            y="10" 
+            width="40" 
+            height="20" 
+            fill="{{ class_data.color }}">
+          </rect>
+          {% set x_pos = x_pos + 40 %}
+        {% endfor %}
+        
+        {# Cursor rectangle (black background for current class or centered gray "?" if no class) #}
+        {% if display_info.class %}
+          {% set cursor_x = (display_info.class|lower|split('')|first|slice(0,1) matches '/[a-g]/' ? 
+            ((display_info.class|lower == 'a' ? 0 : 
+              (display_info.class|lower == 'b' ? 40 : 
+              (display_info.class|lower == 'c' ? 80 : 
+              (display_info.class|lower == 'd' ? 120 : 
+              (display_info.class|lower == 'e' ? 160 : 
+              (display_info.class|lower == 'f' ? 200 : 240))))))) : 0) %}
+          <rect id="rCursor" x="{{ cursor_x }}" width="40" height="40" fill="#000000"></rect>
+        {% else %}
+          {# No class determined - show centered gray cursor with "?" #}
+          {% set cursor_x = 120 %}
+          <rect id="rCursor" x="{{ cursor_x }}" width="40" height="40" fill="#000000"></rect>
+        {% endif %}
+      </g>
+      
+      {# Letter label or "?" #}
+      <text 
+        id="letter" 
+        x="{{ cursor_x + 20 }}" 
+        y="28.35" 
+        fill="#ffffff" 
+        font-family="'BNPP Sans', Arial, sans-serif" 
+        font-size="24px" 
+        stroke-width="1.2977" 
+        style="line-height:1.25" 
+        text-anchor="middle">
+        {{ display_info.class|default('?') }}
+      </text>
+    </svg>
+    
+    {% if value and display_info.unit %}
+      <div class="ps-diagnostic__legend" style="left: {{ cursor_x + 10 }}px;">
+        {{ value }} {{ display_info.unit }}
+      </div>
+    {% endif %}
+    
+    {% if valid_from or valid_to %}
+      <div class="ps-diagnostic__dates">
+        {% if valid_from %}
+          <span class="ps-diagnostic__date-from">{{ 'From:'|t }} {{ valid_from }}</span>
+        {% endif %}
+        {% if valid_to %}
+          <span class="ps-diagnostic__date-to">{{ 'Until:'|t }} {{ valid_to }}</span>
+        {% endif %}
+      </div>
+    {% endif %}
+  </figure>
+
+{% elseif display_info.is_special %}
+  {# Special states (N/A, ?) #}
+  <div class="ps-diagnostic ps-diagnostic--special">
+    <span class="ps-diagnostic__class ps-diagnostic__class--special">{{ display_info.display_text }}</span>
+    {% if display_info.display_text == '?' %}
+      <p class="ps-diagnostic__message">{{ 'Energy class not determined'|t }}</p>
+    {% elseif display_info.display_text == 'N/A' %}
+      <p class="ps-diagnostic__message">{{ 'Diagnostic not applicable'|t }}</p>
+    {% endif %}
+  </div>
+
+{% elseif display_info.class %}
+  {# Fallback simple display #}
+  <div class="ps-diagnostic ps-diagnostic--simple">
+    <div class="ps-diagnostic__bar" style="background-color: {{ display_info.color }}">
+      <span class="ps-diagnostic__class">{{ display_info.class }}</span>
+    </div>
+    {% if value and display_info.unit %}
+      <div class="ps-diagnostic__value">
+        {{ value }} {{ display_info.unit }}
+      </div>
+    {% endif %}
+    {% if valid_from or valid_to %}
+      <div class="ps-diagnostic__dates">
+        {% if valid_from %}
+          <span class="ps-diagnostic__date-from">{{ 'From:'|t }} {{ valid_from }}</span>
+        {% endif %}
+        {% if valid_to %}
+          <span class="ps-diagnostic__date-to">{{ 'Until:'|t }} {{ valid_to }}</span>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+{% endif %}

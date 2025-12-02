@@ -1,0 +1,11 @@
+uuid: null
+langcode: en
+status: true
+id: property_type_sale
+dictionary_type: property_type
+code: SALE
+label: 'For Sale'
+description: 'Property available for purchase'
+weight: 0
+deprecated: false
+metadata: []

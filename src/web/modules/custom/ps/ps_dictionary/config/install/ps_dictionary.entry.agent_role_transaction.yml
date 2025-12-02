@@ -1,0 +1,12 @@
+uuid: null
+langcode: en
+status: true
+id: agent_role_transaction
+dictionary_type: agent_role
+code: TRANSACTION
+label: 'Transaction Agent'
+description: 'Agent managing the transaction process'
+weight: 10
+deprecated: false
+metadata:
+  responsibility: 'negotiation'

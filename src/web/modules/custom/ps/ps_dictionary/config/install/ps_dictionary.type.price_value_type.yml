@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: price_value_type
+label: 'Price Value Type'
+description: 'Type of price value (minimum, maximum, etc.)'
+is_translatable: false
+locked: true
+weight: 0

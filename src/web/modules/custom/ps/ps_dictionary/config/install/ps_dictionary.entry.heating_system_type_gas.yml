@@ -1,0 +1,11 @@
+uuid: null
+langcode: en
+status: true
+id: heating_system_type_gas
+dictionary_type: heating_system_type
+code: GAS
+label: 'Gas'
+description: 'Gas heating system'
+weight: 3
+deprecated: false
+metadata: []

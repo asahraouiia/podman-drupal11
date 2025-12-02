@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: diagnostic_status
+label: 'Diagnostic Status'
+description: 'Status of diagnostics (valid, expired, pending, not required)'
+is_translatable: false
+locked: true
+weight: 0

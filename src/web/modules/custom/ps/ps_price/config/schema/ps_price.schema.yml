@@ -1,0 +1,159 @@
+field.storage_settings.ps_price:
+  type: mapping
+  label: 'Price field storage settings'
+  mapping: {}
+
+ps_price.rule.*:
+  type: config_entity
+  label: 'Price rule'
+  mapping:
+    id:
+      type: string
+      label: 'Machine name'
+    label:
+      type: label
+      label: 'Label'
+    transaction_type:
+      type: string
+      label: 'Transaction type code'
+    unit_code:
+      type: string
+      label: 'Unit code'
+    period_code:
+      type: string
+      label: 'Period code'
+    currency_code:
+      type: string
+      label: 'Currency code'
+    is_vat_excluded:
+      type: boolean
+      label: 'VAT excluded'
+    is_charges_included:
+      type: boolean
+      label: 'Charges included'
+    weight:
+      type: integer
+      label: 'Weight'
+    locked:
+      type: boolean
+      label: 'Locked'
+
+field.field_settings.ps_price:
+  type: mapping
+  label: 'Price field settings'
+  mapping: {}
+
+field.value.ps_price:
+  type: mapping
+  label: 'Default value'
+  mapping:
+    amount:
+      type: float
+      label: 'Amount'
+    currency_code:
+      type: string
+      label: 'Currency code'
+    value_type_code:
+      type: string
+      label: 'Value type code'
+    unit_code:
+      type: string
+      label: 'Unit code'
+    period_code:
+      type: string
+      label: 'Period code'
+    is_on_request:
+      type: boolean
+      label: 'On request'
+    is_from:
+      type: boolean
+      label: 'From'
+    is_vat_excluded:
+      type: boolean
+      label: 'VAT excluded'
+    is_charges_included:
+      type: boolean
+      label: 'Charges included'
+
+field.widget.settings.ps_price_default:
+  type: mapping
+  label: 'Price default widget settings'
+  mapping:
+    show_help:
+      type: boolean
+      label: 'Show help text'
+
+field.formatter.settings.ps_price_default:
+  type: mapping
+  label: 'Price default formatter settings'
+  mapping:
+    show_currency:
+      type: boolean
+      label: 'Show currency'
+    show_unit:
+      type: boolean
+      label: 'Show unit'
+    show_period:
+      type: boolean
+      label: 'Show period'
+    show_flags:
+      type: boolean
+      label: 'Show flags (VAT, charges)'
+
+field.formatter.settings.ps_price_full:
+  type: mapping
+  label: 'Price full formatter settings'
+  mapping:
+    show_currency:
+      type: boolean
+      label: 'Show currency'
+    show_unit:
+      type: boolean
+      label: 'Show unit'
+    show_period:
+      type: boolean
+      label: 'Show period'
+    show_flags:
+      type: boolean
+      label: 'Show flags (VAT, charges)'
+
+field.formatter.settings.ps_price_short:
+  type: mapping
+  label: 'Price short formatter settings'
+  mapping:
+    show_currency:
+      type: boolean
+      label: 'Show currency'
+
+ps_price.settings:
+  type: config_object
+  label: 'PS Price settings'
+  mapping:
+    default_currency:
+      type: string
+      label: 'Default currency code'
+    transaction_field_candidates:
+      type: sequence
+      label: 'Transaction field candidates'
+      sequence:
+        type: string
+        label: 'Field name'
+    flag_visibility:
+      type: mapping
+      label: 'Flag visibility by transaction type'
+      mapping:
+        LOC:
+          type: sequence
+          label: 'Flags for LOC (rental)'
+          sequence:
+            type: string
+        VEN:
+          type: sequence
+          label: 'Flags for VEN (sale)'
+          sequence:
+            type: string
+        COW:
+          type: sequence
+          label: 'Flags for COW (coworking)'
+          sequence:
+            type: string

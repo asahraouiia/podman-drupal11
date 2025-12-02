@@ -1,0 +1,13 @@
+uuid: null
+langcode: en
+status: true
+id: price_unit_lot
+dictionary_type: price_unit
+code: LOT
+label: 'Lot'
+description: 'Per lot/parking space'
+weight: 20
+deprecated: false
+metadata:
+  unit_symbol: 'lot'
+  calculation: 'per_unit'

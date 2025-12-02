@@ -1,0 +1,86 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for ps_diagnostic module.
+ */
+
+declare(strict_types=1);
+
+/**
+ * Update diagnostic field structure from 9 to 7 subfields.
+ *
+ * Migrates data from old structure to new structure:
+ * - type_code → type_id
+ * - Removes: status_code, unit_code, reference, notes
+ * - Adds: no_classification, non_applicable (boolean flags)
+ */
+function ps_diagnostic_update_9001(): void {
+  $database = \Drupal::database();
+  
+  // Get all tables with ps_diagnostic fields.
+  $tables = [];
+  $schema = \Drupal::database()->schema();
+  $all_tables = $schema->findTables('%');
+  
+  foreach ($all_tables as $table_name) {
+    if (strpos($table_name, '__field_diagnostics') !== FALSE) {
+      $tables[] = $table_name;
+    }
+  }
+  
+  foreach ($tables as $table) {
+    // Add new columns.
+    if (!$schema->fieldExists($table, 'field_diagnostics_type_id')) {
+      $schema->addField($table, 'field_diagnostics_type_id', [
+        'type' => 'varchar',
+        'length' => 50,
+        'not null' => FALSE,
+      ]);
+    }
+    
+    if (!$schema->fieldExists($table, 'field_diagnostics_no_classification')) {
+      $schema->addField($table, 'field_diagnostics_no_classification', [
+        'type' => 'int',
+        'size' => 'tiny',
+        'not null' => FALSE,
+        'default' => 0,
+      ]);
+    }
+    
+    if (!$schema->fieldExists($table, 'field_diagnostics_non_applicable')) {
+      $schema->addField($table, 'field_diagnostics_non_applicable', [
+        'type' => 'int',
+        'size' => 'tiny',
+        'not null' => FALSE,
+        'default' => 0,
+      ]);
+    }
+    
+    // Migrate type_code to type_id (simple mapping: DPE → dpe, GES → ges).
+    if ($schema->fieldExists($table, 'field_diagnostics_type_code')) {
+      $database->query("
+        UPDATE {" . $table . "}
+        SET field_diagnostics_type_id = LOWER(field_diagnostics_type_code)
+        WHERE field_diagnostics_type_code IN ('DPE', 'GES', 'dpe', 'ges')
+      ");
+    }
+    
+    // Drop old columns.
+    $old_columns = ['status_code', 'unit_code', 'reference', 'notes'];
+    foreach ($old_columns as $column) {
+      $full_column_name = 'field_diagnostics_' . $column;
+      if ($schema->fieldExists($table, $full_column_name)) {
+        $schema->dropField($table, $full_column_name);
+      }
+    }
+    
+    // Rename type_code to ensure clean migration.
+    if ($schema->fieldExists($table, 'field_diagnostics_type_code')) {
+      $schema->dropField($table, 'field_diagnostics_type_code');
+    }
+  }
+  
+  // Clear caches.
+  drupal_flush_all_caches();
+}

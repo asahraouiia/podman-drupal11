@@ -1,0 +1,23 @@
+services:
+  ps_diagnostic.class_calculator:
+    class: Drupal\ps_diagnostic\Service\DiagnosticClassCalculator
+    arguments:
+      - '@entity_type.manager'
+      - '@logger.factory'
+
+  ps_diagnostic.normalizer:
+    class: Drupal\ps_diagnostic\Service\DiagnosticNormalizer
+    arguments:
+      - '@ps_diagnostic.class_calculator'
+      - '@logger.factory'
+
+  ps_diagnostic.completeness_calculator:
+    class: Drupal\ps_diagnostic\Service\CompletenessCalculator
+    arguments:
+      - '@config.factory'
+
+  ps_diagnostic.search_mapper:
+    class: Drupal\ps_diagnostic\Service\SearchMapper
+
+  ps_diagnostic.compare_builder:
+    class: Drupal\ps_diagnostic\Service\CompareBuilder

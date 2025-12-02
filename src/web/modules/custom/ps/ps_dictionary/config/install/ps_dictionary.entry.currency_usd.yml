@@ -1,0 +1,13 @@
+uuid: null
+langcode: en
+status: true
+id: currency_usd
+dictionary_type: currency
+code: USD
+label: 'US Dollar ($)'
+description: 'United States Dollar'
+weight: 1
+deprecated: false
+metadata:
+  symbol: '$'
+  iso_code: 'USD'

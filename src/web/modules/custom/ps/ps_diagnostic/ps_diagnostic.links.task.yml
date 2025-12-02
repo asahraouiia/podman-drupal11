@@ -1,0 +1,12 @@
+# Diagnostic type edit tabs.
+ps_diagnostic.diagnostic_type.edit_form:
+  route_name: entity.ps_diagnostic_type.edit_form
+  base_route: entity.ps_diagnostic_type.edit_form
+  title: 'Edit'
+  weight: 0
+
+ps_diagnostic.diagnostic_type.delete_form:
+  route_name: entity.ps_diagnostic_type.delete_form
+  base_route: entity.ps_diagnostic_type.edit_form
+  title: 'Delete'
+  weight: 10

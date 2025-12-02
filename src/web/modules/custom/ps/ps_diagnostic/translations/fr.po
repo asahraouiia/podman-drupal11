@@ -1,0 +1,91 @@
+# French translations for ps_diagnostic module
+msgid ""
+msgstr ""
+"Project-Id-Version: ps_diagnostic\n"
+"POT-Creation-Date: 2025-11-24 12:00+0100\n"
+"Language: fr\n"
+
+# Config entities - DPE
+msgid "Energy consumption"
+msgstr "Consommations énergétiques"
+
+msgid "kWh/m²/year"
+msgstr "kWh/m²/an"
+
+# Config entities - GES
+msgid "Greenhouse gas emissions"
+msgstr "Émissions de gaz à effet de serre"
+
+msgid "kg CO₂/m²/year"
+msgstr "kg CO₂/m²/an"
+
+# Form labels
+msgid "Label"
+msgstr "Libellé"
+
+msgid "Unit"
+msgstr "Unité"
+
+msgid "The human-readable name of this diagnostic type."
+msgstr "Le nom lisible de ce type de diagnostic."
+
+msgid "Unit of measurement (e.g., kWh/m²/an, kg CO₂/m²/an)."
+msgstr "Unité de mesure (par ex., kWh/m²/an, kg CO₂/m²/an)."
+
+msgid "Energy Classes Configuration"
+msgstr "Configuration des classes énergétiques"
+
+msgid "Define the energy classes with labels, colors, and maximum range values. Drag rows to reorder. The last class should have an empty range max."
+msgstr "Définissez les classes énergétiques avec libellés, couleurs et valeurs maximales. Glissez les lignes pour réorganiser. La dernière classe doit avoir une valeur maximale vide."
+
+msgid "Color"
+msgstr "Couleur"
+
+msgid "Range Max"
+msgstr "Valeur max"
+
+msgid "Weight"
+msgstr "Poids"
+
+msgid "Operations"
+msgstr "Opérations"
+
+msgid "No classes defined yet."
+msgstr "Aucune classe définie pour l'instant."
+
+msgid "Remove"
+msgstr "Supprimer"
+
+msgid "Leave empty for last class"
+msgstr "Laisser vide pour la dernière classe"
+
+msgid "Add new class"
+msgstr "Ajouter une nouvelle classe"
+
+msgid "Class code"
+msgstr "Code de classe"
+
+msgid "Add class"
+msgstr "Ajouter la classe"
+
+msgid "At least one class must be defined."
+msgstr "Au moins une classe doit être définie."
+
+msgid "Label is required for class @code."
+msgstr "Le libellé est requis pour la classe @code."
+
+msgid "Invalid color format for class @code. Use hex format (e.g., #00A651)."
+msgstr "Format de couleur invalide pour la classe @code. Utilisez le format hexadécimal (par ex., #00A651)."
+
+msgid "Created the %label diagnostic type."
+msgstr "Type de diagnostic %label créé."
+
+msgid "Updated the %label diagnostic type."
+msgstr "Type de diagnostic %label mis à jour."
+
+# Tabs
+msgid "Edit"
+msgstr "Modifier"
+
+msgid "Delete"
+msgstr "Supprimer"

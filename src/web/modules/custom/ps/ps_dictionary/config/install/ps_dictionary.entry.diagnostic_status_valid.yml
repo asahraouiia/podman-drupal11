@@ -1,0 +1,12 @@
+uuid: null
+langcode: en
+status: true
+id: diagnostic_status_valid
+dictionary_type: diagnostic_status
+code: VALID
+label: 'Valid'
+description: 'Diagnostic is current and valid'
+weight: 0
+deprecated: false
+metadata:
+  color: 'green'

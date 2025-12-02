@@ -1,0 +1,11 @@
+uuid: null
+langcode: en
+status: true
+id: offer_status_available
+dictionary_type: offer_status
+code: AVAILABLE
+label: 'Available'
+description: 'Offer is available'
+weight: 0
+deprecated: false
+metadata: []

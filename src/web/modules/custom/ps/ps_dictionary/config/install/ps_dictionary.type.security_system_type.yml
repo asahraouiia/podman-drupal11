@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: security_system_type
+label: 'Security System Type'
+description: 'Types of security systems and access control.'
+is_translatable: false
+locked: true
+weight: 0

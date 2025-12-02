@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: agent_role
+label: 'Agent Role'
+description: 'Roles of agents in property transactions'
+is_translatable: false
+locked: true
+weight: 0

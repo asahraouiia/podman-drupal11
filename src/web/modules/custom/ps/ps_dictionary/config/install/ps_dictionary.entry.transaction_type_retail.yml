@@ -1,0 +1,11 @@
+uuid: null
+langcode: en
+status: true
+id: transaction_type_retail
+dictionary_type: transaction_type
+code: RETAIL
+label: 'Retail'
+description: 'Retail and commercial spaces'
+weight: 2
+deprecated: false
+metadata: []

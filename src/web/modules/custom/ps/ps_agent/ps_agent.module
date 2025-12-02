@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Provides helper functions for ps_agent module.
+ */
+
+declare(strict_types=1);
+
+/**
+ * Get allowed values for agent role field.
+ *
+ * @return array<string, string>
+ *   Array of role options [code => label].
+ */
+function ps_agent_get_role_options(): array {
+  return [
+    'AGENT' => t('Agent'),
+    'MANAGER' => t('Manager'),
+    'DIRECTOR' => t('Director'),
+  ];
+}

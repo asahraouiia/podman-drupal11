@@ -1,0 +1,13 @@
+uuid: null
+langcode: en
+status: true
+id: price_unit_desk
+dictionary_type: price_unit
+code: DESK
+label: 'Desk'
+description: 'Per desk/workstation'
+weight: 10
+deprecated: false
+metadata:
+  unit_symbol: 'desk'
+  calculation: 'per_unit'

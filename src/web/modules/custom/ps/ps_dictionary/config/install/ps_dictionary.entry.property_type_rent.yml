@@ -1,0 +1,11 @@
+uuid: null
+langcode: en
+status: true
+id: property_type_rent
+dictionary_type: property_type
+code: RENT
+label: 'For Rent'
+description: 'Property available for lease'
+weight: 1
+deprecated: false
+metadata: []

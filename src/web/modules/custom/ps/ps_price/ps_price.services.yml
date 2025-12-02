@@ -1,0 +1,21 @@
+services:
+  ps_price.formatter:
+    class: Drupal\ps_price\Service\PriceFormatter
+    arguments:
+      - '@language_manager'
+
+  ps_price.normalizer:
+    class: Drupal\ps_price\Service\PriceNormalizer
+
+  ps_price.rule_matcher:
+    class: Drupal\ps_price\Service\PriceRuleMatcher
+    arguments:
+      - '@entity_type.manager'
+      - '@config.factory'
+
+  ps_price.auto_rule_subscriber:
+    class: Drupal\ps_price\EventSubscriber\AutoPriceRuleSubscriber
+    arguments:
+      - '@ps_price.rule_matcher'
+    tags:
+      - { name: event_subscriber }

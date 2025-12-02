@@ -1,0 +1,49 @@
+ps.admin:
+  path: '/admin/ps'
+  defaults:
+    _controller: 'Drupal\ps\Controller\AdminController::overview'
+    _title: 'Realestate'
+  requirements:
+    _permission: 'access ps administration'
+  options:
+    _admin_route: true
+
+ps.admin_structure:
+  path: '/admin/ps/structure'
+  defaults:
+    _controller: 'Drupal\ps\Controller\StructureController::overview'
+    _title: 'Structure'
+  requirements:
+    _permission: 'access ps administration'
+  options:
+    _admin_route: true
+
+ps.admin_config_overview:
+  path: '/admin/ps/config'
+  defaults:
+    _controller: 'Drupal\ps\Controller\StructureController::configOverview'
+    _title: 'Configuration'
+  requirements:
+    _permission: 'access ps administration'
+  options:
+    _admin_route: true
+
+ps.admin_config_realestate:
+  path: '/admin/ps/config/realestate'
+  defaults:
+    _form: 'Drupal\ps\Form\SettingsForm'
+    _title: 'General'
+  requirements:
+    _permission: 'access ps administration'
+  options:
+    _admin_route: true
+
+ps.health:
+  path: '/admin/ps/health'
+  defaults:
+    _controller: 'Drupal\ps\Controller\HealthController::check'
+    _title: 'System Health Check'
+  requirements:
+    _permission: 'view ps telemetry'
+  options:
+    _admin_route: true

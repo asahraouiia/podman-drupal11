@@ -1,0 +1,24 @@
+<?php
+
+declare(strict_types=1);
+
+/**
+ * @file
+ * Install and update hooks for ps_division module.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function ps_division_install(): void {
+  // Entity schema installed automatically via attributes.
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function ps_division_uninstall(): void {
+  // Purge cached aggregates.
+  \Drupal::cache()->deleteAll();
+}
+

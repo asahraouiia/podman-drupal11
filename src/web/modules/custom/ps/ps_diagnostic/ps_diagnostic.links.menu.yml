@@ -1,0 +1,13 @@
+entity.ps_diagnostic_type.collection:
+  title: 'Diagnostic Types'
+  description: 'Manage diagnostic types (DPE, GES) with energy classes and ranges'
+  route_name: entity.ps_diagnostic_type.collection
+  parent: ps.admin_structure
+  weight: 35
+
+ps_diagnostic.settings:
+  title: 'Diagnostic Settings'
+  description: 'Configure diagnostic field settings'
+  route_name: ps_diagnostic.settings
+  parent: ps.admin_config_overview
+  weight: 40

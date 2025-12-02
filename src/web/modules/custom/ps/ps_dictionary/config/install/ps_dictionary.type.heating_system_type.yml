@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: heating_system_type
+label: 'Heating System Type'
+description: 'Types of heating systems available.'
+is_translatable: false
+locked: true
+weight: 0

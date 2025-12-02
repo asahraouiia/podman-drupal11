@@ -1,0 +1,9 @@
+entity.ps_dictionary_type.edit_form:
+  route_name: 'entity.ps_dictionary_type.edit_form'
+  title: 'Edit'
+  base_route: entity.ps_dictionary_type.edit_form
+
+ps_dictionary.entries:
+  route_name: 'ps_dictionary.entries'
+  title: 'Entries'
+  base_route: entity.ps_dictionary_type.edit_form

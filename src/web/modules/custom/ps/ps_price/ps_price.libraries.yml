@@ -1,0 +1,8 @@
+widget:
+  js:
+    assets/js/ps_price.widget.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/once
+    - core/drupalSettings

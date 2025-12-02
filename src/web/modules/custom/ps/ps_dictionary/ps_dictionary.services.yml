@@ -1,0 +1,7 @@
+services:
+  ps_dictionary.manager:
+    class: Drupal\ps_dictionary\Service\DictionaryManager
+    arguments:
+      - '@entity_type.manager'
+      - '@cache.default'
+      - '@logger.factory'

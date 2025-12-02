@@ -1,0 +1,22 @@
+default_currency: EUR
+
+# Transaction field candidates (priority order)
+# The system will check these fields on the parent entity to determine transaction type
+transaction_field_candidates:
+  - field_transaction_type
+  - field_operation_code
+
+# Flag visibility by transaction type
+# Defines which price flags should be displayed in the widget for each transaction type
+flag_visibility:
+  LOC:  # Location (rental)
+    - is_charges_included
+    - is_from
+    - is_on_request
+  VEN:  # Vente (sale)
+    - is_vat_excluded
+    - is_from
+    - is_on_request
+  COW:  # Coworking
+    - is_from
+    - is_on_request

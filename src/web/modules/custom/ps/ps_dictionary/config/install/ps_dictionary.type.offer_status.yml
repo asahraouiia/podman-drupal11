@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: offer_status
+label: 'Offer Status'
+description: 'Current status of property offers'
+is_translatable: false
+locked: true
+weight: 0

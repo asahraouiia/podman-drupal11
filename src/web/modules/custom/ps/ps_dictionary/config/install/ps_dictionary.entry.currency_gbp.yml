@@ -1,0 +1,13 @@
+uuid: null
+langcode: en
+status: true
+id: currency_gbp
+dictionary_type: currency
+code: GBP
+label: 'British Pound (£)'
+description: 'United Kingdom Pound Sterling'
+weight: 2
+deprecated: false
+metadata:
+  symbol: '£'
+  iso_code: 'GBP'

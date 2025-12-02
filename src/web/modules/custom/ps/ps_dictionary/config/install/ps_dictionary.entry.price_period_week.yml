@@ -1,0 +1,13 @@
+uuid: null
+langcode: en
+status: true
+id: price_period_week
+dictionary_type: price_period
+code: WEEK
+label: 'Per week'
+description: 'Weekly period'
+weight: 30
+deprecated: false
+metadata:
+  months: 0.25
+  abbreviation: '/week'

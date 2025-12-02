@@ -1,0 +1,4 @@
+administer ps_diagnostic:
+  title: 'Administer PropertySearch Diagnostic'
+  description: 'Configure diagnostic settings and manage diagnostic data.'
+  restrict access: true

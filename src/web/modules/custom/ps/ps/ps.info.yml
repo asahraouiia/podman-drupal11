@@ -1,0 +1,7 @@
+name: 'PropertySearch Socle'
+type: module
+description: 'Infrastructure technique transverse PropertySearch'
+package: PropertySearch
+core_version_requirement: ^11
+dependencies:
+  - drupal:system

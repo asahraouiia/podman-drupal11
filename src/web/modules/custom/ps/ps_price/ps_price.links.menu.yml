@@ -1,0 +1,13 @@
+ps_price.settings:
+  title: 'Price settings'
+  description: 'Configure PropertySearch price rules and defaults.'
+  parent: ps.admin_config_overview
+  route_name: ps_price.settings
+  weight: 0
+
+entity.ps_price_rule.collection:
+  title: 'Price Rules'
+  description: 'Manage price rules for transaction types'
+  route_name: entity.ps_price_rule.collection
+  parent: ps_price.settings
+  weight: 10

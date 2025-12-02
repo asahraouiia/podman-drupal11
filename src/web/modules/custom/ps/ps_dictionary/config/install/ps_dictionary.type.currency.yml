@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: currency
+label: 'Currency'
+description: 'Supported currency codes (ISO 4217)'
+is_translatable: false
+locked: true
+weight: 0

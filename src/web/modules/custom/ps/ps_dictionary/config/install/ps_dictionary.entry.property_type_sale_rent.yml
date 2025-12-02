@@ -1,0 +1,11 @@
+uuid: null
+langcode: en
+status: true
+id: property_type_sale_rent
+dictionary_type: property_type
+code: SALE_RENT
+label: 'Sale or Rent'
+description: 'Property available for sale or rent'
+weight: 2
+deprecated: false
+metadata: []

@@ -1,0 +1,12 @@
+uuid: null
+langcode: en
+status: true
+id: diagnostic_status_expired
+dictionary_type: diagnostic_status
+code: EXPIRED
+label: 'Expired'
+description: 'Diagnostic has expired'
+weight: 10
+deprecated: false
+metadata:
+  color: 'red'

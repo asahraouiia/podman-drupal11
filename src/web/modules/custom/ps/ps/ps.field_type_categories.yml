@@ -1,0 +1,4 @@
+PropertySearch:
+  label: 'PropertySearch'
+  description: 'Field types for PropertySearch platform.'
+  weight: 10

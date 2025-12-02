@@ -1,0 +1,13 @@
+uuid: null
+langcode: en
+status: true
+id: price_unit_global
+dictionary_type: price_unit
+code: GLOBAL
+label: 'Global'
+description: 'Global price (no unit)'
+weight: 30
+deprecated: false
+metadata:
+  unit_symbol: ''
+  calculation: 'global'

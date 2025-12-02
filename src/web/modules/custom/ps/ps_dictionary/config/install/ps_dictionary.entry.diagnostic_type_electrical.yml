@@ -1,0 +1,12 @@
+uuid: null
+langcode: en
+status: true
+id: diagnostic_type_electrical
+dictionary_type: diagnostic_type
+code: ELECTRICAL
+label: 'Electrical Installation'
+description: 'Electrical safety diagnostic'
+weight: 50
+deprecated: false
+metadata:
+  category: 'safety'

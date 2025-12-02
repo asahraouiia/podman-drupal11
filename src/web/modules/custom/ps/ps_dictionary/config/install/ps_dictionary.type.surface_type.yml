@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: surface_type
+label: 'Surface Type'
+description: 'Types of surface measurements (usable, GLA, NIA, etc.)'
+is_translatable: false
+locked: true
+weight: 0

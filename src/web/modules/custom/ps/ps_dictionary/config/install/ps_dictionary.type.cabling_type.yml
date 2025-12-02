@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: cabling_type
+label: 'Computer Cabling Type'
+description: 'Types of computer network cabling systems.'
+is_translatable: false
+locked: true
+weight: 0

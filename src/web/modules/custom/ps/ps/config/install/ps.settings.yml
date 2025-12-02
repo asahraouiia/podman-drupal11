@@ -1,0 +1,8 @@
+performance:
+  enable_monitoring: true
+  slow_request_threshold: 1000
+validation:
+  strict_mode: false
+notification:
+  default_channel: 'email'
+  retry_attempts: 3

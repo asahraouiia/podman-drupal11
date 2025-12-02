@@ -1,0 +1,7 @@
+services:
+  ps_agent.manager:
+    class: Drupal\ps_agent\Service\AgentManager
+    arguments:
+      - '@entity_type.manager'
+      - '@ps.settings'
+      - '@logger.factory'

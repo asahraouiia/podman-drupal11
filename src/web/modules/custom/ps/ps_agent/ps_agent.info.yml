@@ -1,0 +1,14 @@
+name: 'PropertySearch Agent'
+type: module
+description: 'Gestion des agents commerciaux avec synchronisation CRM et champs BO protégés.'
+package: PropertySearch
+core_version_requirement: ^11
+dependencies:
+  - drupal:system
+  - drupal:user
+  - drupal:field
+  - drupal:text
+  - drupal:image
+  - drupal:telephone
+  - ps:ps
+  - ps_dictionary:ps_dictionary

@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: price_period
+label: 'Price Period'
+description: 'Periods for expressing recurring prices (month, year, etc.)'
+is_translatable: false
+locked: true
+weight: 0

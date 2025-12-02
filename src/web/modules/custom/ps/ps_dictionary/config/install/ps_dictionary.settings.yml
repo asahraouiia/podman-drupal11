@@ -1,0 +1,6 @@
+uuid: null
+langcode: en
+allow_unknown_codes: false
+auto_create_on_unknown: false
+default_status_new_items: inactive
+deprecated_policy: soft

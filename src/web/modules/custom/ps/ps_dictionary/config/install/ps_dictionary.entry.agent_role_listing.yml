@@ -1,0 +1,12 @@
+uuid: null
+langcode: en
+status: true
+id: agent_role_listing
+dictionary_type: agent_role
+code: LISTING
+label: 'Listing Agent'
+description: 'Agent responsible for listing the property'
+weight: 0
+deprecated: false
+metadata:
+  responsibility: 'marketing'

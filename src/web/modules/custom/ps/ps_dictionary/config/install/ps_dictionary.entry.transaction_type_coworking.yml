@@ -1,0 +1,11 @@
+uuid: null
+langcode: en
+status: true
+id: transaction_type_coworking
+dictionary_type: transaction_type
+code: COWORKING
+label: 'Coworking'
+description: 'Coworking spaces'
+weight: 3
+deprecated: false
+metadata: []

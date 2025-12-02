@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: diagnostic_type
+label: 'Diagnostic Type'
+description: 'Types of property diagnostics (DPE, GES, asbestos, lead, etc.)'
+is_translatable: false
+locked: true
+weight: 0

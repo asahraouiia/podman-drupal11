@@ -1,0 +1,20 @@
+services:
+  ps.settings:
+    class: Drupal\ps\Service\SettingsManager
+    arguments: ['@config.factory']
+
+  ps.health_check:
+    class: Drupal\ps\Service\HealthCheckManager
+    arguments: ['@database', '@logger.factory']
+
+  ps.validation_rules:
+    class: Drupal\ps\Service\ValidationRulesEngine
+    arguments: ['@config.factory', '@logger.factory']
+
+  ps.notification:
+    class: Drupal\ps\Service\NotificationManager
+    arguments: ['@email.validator', '@logger.factory', '@config.factory']
+
+  ps.dashboard_widget.manager:
+    class: Drupal\ps\Plugin\DashboardWidgetManager
+    parent: default_plugin_manager

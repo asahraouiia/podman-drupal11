@@ -1,0 +1,109 @@
+ps_diagnostic.settings:
+  type: config_object
+  label: 'Diagnostic Settings'
+  mapping:
+    surface_round_precision:
+      type: integer
+      label: 'Surface rounding precision'
+    enable_completeness_score:
+      type: boolean
+      label: 'Enable completeness score calculation'
+    flags_definition:
+      type: sequence
+      label: 'Available compliance flags'
+      sequence:
+        type: string
+        label: 'Flag code'
+
+ps_diagnostic.type.*:
+  type: config_entity
+  label: 'Diagnostic Type'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    unit:
+      type: label
+      label: 'Unit of measurement'
+    classes:
+      type: sequence
+      label: 'Energy classes'
+      sequence:
+        type: mapping
+        label: 'Class configuration'
+        mapping:
+          label:
+            type: string
+            label: 'Class label'
+          color:
+            type: string
+            label: 'Color hex code'
+          range_max:
+            type: integer
+            label: 'Maximum range value'
+            nullable: true
+
+field.field_settings.ps_diagnostic:
+  type: mapping
+  label: 'Diagnostic field settings'
+  mapping: {}
+
+field.storage_settings.ps_diagnostic:
+  type: mapping
+  label: 'Diagnostic field storage settings'
+  mapping: {}
+
+field.value.ps_diagnostic:
+  type: mapping
+  label: 'Diagnostic field value'
+  mapping:
+    type_id:
+      type: string
+      label: 'Diagnostic type ID'
+    value_numeric:
+      type: float
+      label: 'Numeric value'
+    label_code:
+      type: string
+      label: 'Energy class (A-G)'
+    valid_from:
+      type: string
+      label: 'Diagnostic date'
+    valid_to:
+      type: string
+      label: 'Valid until date'
+    no_classification:
+      type: boolean
+      label: 'No classification available'
+    non_applicable:
+      type: boolean
+      label: 'Not applicable'
+    reference:
+      type: string
+      label: 'Reference number'
+    notes:
+      type: string
+      label: 'Notes'
+
+field.formatter.settings.ps_diagnostic_default:
+  type: mapping
+  label: 'Diagnostic default formatter settings'
+  mapping:
+    show_value:
+      type: boolean
+      label: 'Show numeric value'
+    show_dates:
+      type: boolean
+      label: 'Show validity dates'
+    layout:
+      type: string
+      label: 'Layout'
+    dim_empty:
+      type: boolean
+      label: 'Dim when empty'
+    dim_opacity:
+      type: integer
+      label: 'Dimming opacity percentage'

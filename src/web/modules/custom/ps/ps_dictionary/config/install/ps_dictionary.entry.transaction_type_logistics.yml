@@ -1,0 +1,11 @@
+uuid: null
+langcode: en
+status: true
+id: transaction_type_logistics
+dictionary_type: transaction_type
+code: LOGISTICS
+label: 'Logistics'
+description: 'Warehouses and logistics facilities'
+weight: 1
+deprecated: false
+metadata: []

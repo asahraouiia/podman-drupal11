@@ -1,0 +1,40 @@
+ps_price.settings:
+  path: '/admin/ps/config/price'
+  defaults:
+    _form: 'Drupal\ps_price\Form\PriceSettingsForm'
+    _title: 'PS Price settings'
+  requirements:
+    _permission: 'administer site configuration'
+
+# Price Rule entity routes.
+entity.ps_price_rule.collection:
+  path: '/admin/ps/config/price/rules'
+  defaults:
+    _entity_list: 'ps_price_rule'
+    _title: 'Price Rules'
+  requirements:
+    _permission: 'administer ps_price configuration'
+
+entity.ps_price_rule.add_form:
+  path: '/admin/ps/config/price/rules/add'
+  defaults:
+    _entity_form: 'ps_price_rule.add'
+    _title: 'Add Price Rule'
+  requirements:
+    _permission: 'administer ps_price configuration'
+
+entity.ps_price_rule.edit_form:
+  path: '/admin/ps/config/price/rules/{ps_price_rule}/edit'
+  defaults:
+    _entity_form: 'ps_price_rule.edit'
+    _title: 'Edit Price Rule'
+  requirements:
+    _permission: 'administer ps_price configuration'
+
+entity.ps_price_rule.delete_form:
+  path: '/admin/ps/config/price/rules/{ps_price_rule}/delete'
+  defaults:
+    _entity_form: 'ps_price_rule.delete'
+    _title: 'Delete Price Rule'
+  requirements:
+    _permission: 'administer ps_price configuration'

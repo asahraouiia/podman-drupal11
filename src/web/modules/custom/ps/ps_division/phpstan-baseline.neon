@@ -1,0 +1,7 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Class Drupal\\ps_division\\Plugin\\Field\\FieldFormatter\\SurfaceDefaultFormatter extends generic class Drupal\\Core\\Field\\FormatterBase but does not specify its types\: T$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Plugin/Field/FieldFormatter/SurfaceDefaultFormatter.php

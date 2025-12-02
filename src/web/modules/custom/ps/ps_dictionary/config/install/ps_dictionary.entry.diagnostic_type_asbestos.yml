@@ -1,0 +1,12 @@
+uuid: null
+langcode: en
+status: true
+id: diagnostic_type_asbestos
+dictionary_type: diagnostic_type
+code: ASBESTOS
+label: 'Asbestos'
+description: 'Asbestos detection diagnostic'
+weight: 20
+deprecated: false
+metadata:
+  category: 'health'

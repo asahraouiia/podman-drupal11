@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: transaction_type
+label: 'Transaction Type'
+description: 'Property transaction categories (office, logistics, retail, etc.)'
+is_translatable: false
+locked: true
+weight: 0

@@ -1,0 +1,175 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Class Drupal\\ps_price\\Plugin\\Field\\FieldFormatter\\PriceFullFormatter extends generic class Drupal\\Core\\Field\\FormatterBase but does not specify its types\: T$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Plugin/Field/FieldFormatter/PriceFullFormatter.php
+
+		-
+			message: '#^Method Drupal\\ps_price\\Plugin\\Field\\FieldFormatter\\PriceFullFormatter\:\:viewElements\(\) has parameter \$items with generic interface Drupal\\Core\\Field\\FieldItemListInterface but does not specify its types\: T$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Plugin/Field/FieldFormatter/PriceFullFormatter.php
+
+		-
+			message: '#^Parameter \#1 \$item of method Drupal\\ps_price\\Service\\PriceFormatterInterface\:\:format\(\) expects Drupal\\Core\\Field\\FieldItemInterface, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Plugin/Field/FieldFormatter/PriceFullFormatter.php
+
+		-
+			message: '#^Parameter \#3 \$field_definition of method Drupal\\Core\\Field\\FormatterBase\<Drupal\\Core\\Field\\FieldItemListInterface\>\:\:__construct\(\) expects Drupal\\Core\\Field\\FieldDefinitionInterface, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Plugin/Field/FieldFormatter/PriceFullFormatter.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: src/Plugin/Field/FieldFormatter/PriceFullFormatter.php
+
+		-
+			message: '#^Class Drupal\\ps_price\\Plugin\\Field\\FieldFormatter\\PriceShortFormatter extends generic class Drupal\\Core\\Field\\FormatterBase but does not specify its types\: T$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Plugin/Field/FieldFormatter/PriceShortFormatter.php
+
+		-
+			message: '#^Method Drupal\\ps_price\\Plugin\\Field\\FieldFormatter\\PriceShortFormatter\:\:viewElements\(\) has parameter \$items with generic interface Drupal\\Core\\Field\\FieldItemListInterface but does not specify its types\: T$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Plugin/Field/FieldFormatter/PriceShortFormatter.php
+
+		-
+			message: '#^Parameter \#1 \$item of method Drupal\\ps_price\\Service\\PriceFormatterInterface\:\:formatShort\(\) expects Drupal\\Core\\Field\\FieldItemInterface, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Plugin/Field/FieldFormatter/PriceShortFormatter.php
+
+		-
+			message: '#^Parameter \#3 \$field_definition of method Drupal\\Core\\Field\\FormatterBase\<Drupal\\Core\\Field\\FieldItemListInterface\>\:\:__construct\(\) expects Drupal\\Core\\Field\\FieldDefinitionInterface, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Plugin/Field/FieldFormatter/PriceShortFormatter.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: src/Plugin/Field/FieldFormatter/PriceShortFormatter.php
+
+		-
+			message: '#^Parameter \$category of attribute class Drupal\\Core\\Field\\Attribute\\FieldType constructor expects string, Drupal\\Core\\StringTranslation\\TranslatableMarkup given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Plugin/Field/FieldType/PriceItem.php
+
+		-
+			message: '#^Method Drupal\\ps_price\\Plugin\\Field\\FieldWidget\\PriceDefaultWidget\:\:formElement\(\) has parameter \$items with generic interface Drupal\\Core\\Field\\FieldItemListInterface but does not specify its types\: T$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Plugin/Field/FieldWidget/PriceDefaultWidget.php
+
+		-
+			message: '#^Access to an undefined property Drupal\\Core\\Field\\FieldItemInterface\:\:\$amount\.$#'
+			identifier: property.notFound
+			count: 4
+			path: src/Service/PriceFormatter.php
+
+		-
+			message: '#^Access to an undefined property Drupal\\Core\\Field\\FieldItemInterface\:\:\$amount_to\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Service/PriceFormatter.php
+
+		-
+			message: '#^Access to an undefined property Drupal\\Core\\Field\\FieldItemInterface\:\:\$currency\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Service/PriceFormatter.php
+
+		-
+			message: '#^Access to an undefined property Drupal\\Core\\Field\\FieldItemInterface\:\:\$is_charges_included\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Service/PriceFormatter.php
+
+		-
+			message: '#^Access to an undefined property Drupal\\Core\\Field\\FieldItemInterface\:\:\$is_from\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Service/PriceFormatter.php
+
+		-
+			message: '#^Access to an undefined property Drupal\\Core\\Field\\FieldItemInterface\:\:\$is_on_request\.$#'
+			identifier: property.notFound
+			count: 3
+			path: src/Service/PriceFormatter.php
+
+		-
+			message: '#^Access to an undefined property Drupal\\Core\\Field\\FieldItemInterface\:\:\$is_vat_excluded\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Service/PriceFormatter.php
+
+		-
+			message: '#^Access to an undefined property Drupal\\Core\\Field\\FieldItemInterface\:\:\$period\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Service/PriceFormatter.php
+
+		-
+			message: '#^Access to an undefined property Drupal\\Core\\Field\\FieldItemInterface\:\:\$unit\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Service/PriceFormatter.php
+
+		-
+			message: '#^Binary operation "\." between ''/'' and mixed results in an error\.$#'
+			identifier: binaryOp.invalid
+			count: 1
+			path: src/Service/PriceFormatter.php
+
+		-
+			message: '#^Cannot cast mixed to float\.$#'
+			identifier: cast.double
+			count: 1
+			path: src/Service/PriceFormatter.php
+
+		-
+			message: '#^Parameter \#1 \$amount of method Drupal\\ps_price\\Service\\PriceFormatter\:\:formatAmount\(\) expects float\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 4
+			path: src/Service/PriceFormatter.php
+
+		-
+			message: '#^Access to an undefined property Drupal\\Core\\Field\\FieldItemInterface\:\:\$amount\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Service/PriceNormalizer.php
+
+		-
+			message: '#^Access to an undefined property Drupal\\Core\\Field\\FieldItemInterface\:\:\$is_on_request\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Service/PriceNormalizer.php
+
+		-
+			message: '#^Cannot cast mixed to float\.$#'
+			identifier: cast.double
+			count: 1
+			path: src/Service/PriceNormalizer.php
+
+		-
+			message: '#^Parameter \#2 \$period of method Drupal\\ps_price\\Service\\PriceNormalizer\:\:convertPeriod\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Service/PriceNormalizer.php
+
+		-
+			message: '#^Parameter \#2 \$unit of method Drupal\\ps_price\\Service\\PriceNormalizer\:\:convertUnit\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Service/PriceNormalizer.php

@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - ps_dictionary.type.price_period
+id: price_period_day
+dictionary_type: price_period
+code: DAY
+label: 'Per day'
+weight: 10

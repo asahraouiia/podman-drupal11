@@ -1,0 +1,12 @@
+uuid: null
+langcode: en
+status: true
+id: diagnostic_status_not_required
+dictionary_type: diagnostic_status
+code: NOT_REQUIRED
+label: 'Not Required'
+description: 'Diagnostic not required for this property'
+weight: 30
+deprecated: false
+metadata:
+  color: 'gray'

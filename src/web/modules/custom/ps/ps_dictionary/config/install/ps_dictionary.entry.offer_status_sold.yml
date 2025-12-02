@@ -1,0 +1,11 @@
+uuid: null
+langcode: en
+status: true
+id: offer_status_sold
+dictionary_type: offer_status
+code: SOLD
+label: 'Sold'
+description: 'Offer has been sold or leased'
+weight: 2
+deprecated: false
+metadata: []

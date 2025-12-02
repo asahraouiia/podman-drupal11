@@ -1,0 +1,59 @@
+entity.agent.canonical:
+  path: '/agent/{agent}'
+  defaults:
+    _entity_view: 'agent.full'
+    _title_callback: '\Drupal\ps_agent\Entity\Agent::loadTitle'
+  requirements:
+    _entity_access: 'agent.view'
+  options:
+    parameters:
+      agent:
+        type: entity:agent
+
+entity.agent.collection:
+  path: '/admin/ps/structure/agents'
+  defaults:
+    _entity_list: 'agent'
+    _title: 'Agents'
+  requirements:
+    _permission: 'administer agent entities'
+
+entity.agent.add_form:
+  path: '/admin/ps/structure/agents/add'
+  defaults:
+    _entity_form: 'agent.add'
+    _title: 'Add Agent'
+  requirements:
+    _permission: 'create agent entities'
+
+entity.agent.edit_form:
+  path: '/admin/ps/structure/agents/{agent}/edit'
+  defaults:
+    _entity_form: 'agent.edit'
+    _title_callback: '\Drupal\ps_agent\Entity\Agent::loadTitle'
+  requirements:
+    _permission: 'edit agent entities'
+  options:
+    parameters:
+      agent:
+        type: entity:agent
+
+entity.agent.delete_form:
+  path: '/admin/ps/structure/agents/{agent}/delete'
+  defaults:
+    _entity_form: 'agent.delete'
+    _title: 'Delete Agent'
+  requirements:
+    _permission: 'delete agent entities'
+  options:
+    parameters:
+      agent:
+        type: entity:agent
+
+ps_agent.settings:
+  path: '/admin/ps/config/agents'
+  defaults:
+    _form: '\Drupal\ps_agent\Form\AgentSettingsForm'
+    _title: 'Agent Settings'
+  requirements:
+    _permission: 'administer agent entities'

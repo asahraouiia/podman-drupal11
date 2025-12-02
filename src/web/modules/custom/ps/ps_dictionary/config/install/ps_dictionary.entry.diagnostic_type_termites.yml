@@ -1,0 +1,12 @@
+uuid: null
+langcode: en
+status: true
+id: diagnostic_type_termites
+dictionary_type: diagnostic_type
+code: TERMITES
+label: 'Termites'
+description: 'Termite infestation diagnostic'
+weight: 40
+deprecated: false
+metadata:
+  category: 'pest'

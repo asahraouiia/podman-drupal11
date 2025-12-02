@@ -1,4 +1,0 @@
-services:
-  ps_dico_types.settings_manager:
-    class: Drupal\ps_dico_types\Service\SettingsManager
-    arguments: ['@config.factory']

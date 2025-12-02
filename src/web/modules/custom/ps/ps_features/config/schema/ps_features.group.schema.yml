@@ -1,0 +1,21 @@
+ps_features.group.*:
+  type: config_entity
+  label: 'Feature Group'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      translatable: true
+      label: 'Label'
+    description:
+      type: text
+      translatable: true
+      label: 'Description'
+    icon:
+      type: string
+      label: 'Icon'
+    weight:
+      type: integer
+      label: 'Weight'

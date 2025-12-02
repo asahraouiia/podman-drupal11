@@ -1,0 +1,49 @@
+entity.ps_diagnostic_type.collection:
+  path: '/admin/ps/structure/diagnostic-types'
+  defaults:
+    _entity_list: 'ps_diagnostic_type'
+    _title: 'Diagnostic Types'
+  requirements:
+    _permission: 'administer ps_diagnostic'
+  options:
+    _admin_route: TRUE
+
+entity.ps_diagnostic_type.add_form:
+  path: '/admin/ps/structure/diagnostic-types/add'
+  defaults:
+    _entity_form: 'ps_diagnostic_type.add'
+    _title: 'Add diagnostic type'
+  requirements:
+    _permission: 'administer ps_diagnostic'
+  options:
+    _admin_route: TRUE
+
+entity.ps_diagnostic_type.edit_form:
+  path: '/admin/ps/structure/diagnostic-types/{ps_diagnostic_type}/edit'
+  defaults:
+    _entity_form: 'ps_diagnostic_type.edit'
+    _title: 'Edit diagnostic type'
+  requirements:
+    _permission: 'administer ps_diagnostic'
+  options:
+    _admin_route: TRUE
+
+entity.ps_diagnostic_type.delete_form:
+  path: '/admin/ps/structure/diagnostic-types/{ps_diagnostic_type}/delete'
+  defaults:
+    _entity_form: 'ps_diagnostic_type.delete'
+    _title: 'Delete diagnostic type'
+  requirements:
+    _permission: 'administer ps_diagnostic'
+  options:
+    _admin_route: TRUE
+
+ps_diagnostic.settings:
+  path: '/admin/ps/config/diagnostic'
+  defaults:
+    _form: '\Drupal\ps_diagnostic\Form\DiagnosticSettingsForm'
+    _title: 'Diagnostic Settings'
+  requirements:
+    _permission: 'administer ps_diagnostic'
+  options:
+    _admin_route: TRUE

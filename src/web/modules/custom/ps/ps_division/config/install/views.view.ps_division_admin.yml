@@ -1,0 +1,149 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - ps_division
+id: ps_division_admin
+label: 'Divisions (Admin View)'
+module: views
+description: 'Administrative listing of Division entities.'
+tag: ''
+base_table: ps_division_field_data
+base_field: id
+core: 11.x
+show_admin_links: true
+display:
+  default:
+    display_plugin: default
+    id: default
+    display_title: 'Master'
+    position: 0
+    display_options:
+      access:
+        type: perm
+        options:
+          perm: 'administer ps_division entities'
+      cache:
+        type: tag
+        options: { }
+      query:
+        type: views_query
+        options:
+          disable_sql_rewrite: false
+          distinct: false
+          query_comment: ''
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        type: full
+        options:
+          items_per_page: 50
+          offset: 0
+      style:
+        type: table
+        options:
+          grouping: { }
+          row_class: ''
+          default_row_class: true
+          columns:
+            id: id
+            building_name: building_name
+            entity_id: entity_id
+            type: type
+            nature: nature
+            lot: lot
+          info:
+            id:
+              sortable: true
+              default_sort_order: asc
+            building_name:
+              sortable: true
+            entity_id:
+              sortable: true
+            type:
+              sortable: true
+            nature:
+              sortable: true
+            lot:
+              sortable: true
+          override: true
+          sticky: false
+          summary: ''
+      row:
+        type: fields
+      fields:
+        id:
+          id: id
+          table: ps_division_field_data
+          field: id
+          label: ID
+          exclude: false
+          alter: { }
+        building_name:
+          id: building_name
+          table: ps_division_field_data
+          field: building_name
+          label: Building
+          exclude: false
+          alter: { }
+        entity_id:
+          id: entity_id
+          table: ps_division_field_data
+          field: entity_id
+          label: Parent
+          exclude: false
+          alter: { }
+        type:
+          id: type
+          table: ps_division_field_data
+          field: type
+          label: Type
+          exclude: false
+          alter: { }
+        nature:
+          id: nature
+          table: ps_division_field_data
+          field: nature
+          label: Nature
+          exclude: false
+          alter: { }
+        lot:
+          id: lot
+          table: ps_division_field_data
+          field: lot
+          label: Lot
+          exclude: false
+          alter: { }
+      filters: { }
+      sorts: { }
+      title: 'Divisions'
+      header: { }
+      footer: { }
+      empty: { }
+      relationships: { }
+      arguments: { }
+      display_extenders: { }
+  page_1:
+    display_plugin: page
+    id: page_1
+    display_title: 'Page'
+    position: 1
+    display_options:
+      path: 'admin/ps/structure/divisions/view'
+      menu: { }
+      display_extenders: { }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+      tags:
+        - 'config:views.view.ps_division_admin'

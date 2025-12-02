@@ -1,0 +1,160 @@
+/**
+ * @file
+ * Styles for diagnostic type form with interactive classes table.
+ */
+
+/* Classes table styling */
+#edit-classes {
+  margin-top: 1rem;
+}
+
+#edit-classes thead th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+  padding: 0.75rem 0.5rem;
+  border-bottom: 2px solid #ddd;
+}
+
+#edit-classes tbody tr {
+  border-bottom: 1px solid #eee;
+}
+
+#edit-classes tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+#edit-classes tbody tr.draggable {
+  cursor: move;
+}
+
+#edit-classes tbody tr.drag {
+  background-color: #fef5e7;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#edit-classes td {
+  padding: 0.5rem;
+  vertical-align: middle;
+}
+
+/* Label input */
+#edit-classes input[type="text"] {
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Color picker styling */
+#edit-classes input[type="color"] {
+  width: 60px;
+  height: 40px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 2px;
+}
+
+#edit-classes input[type="color"]:hover {
+  border-color: #0073aa;
+}
+
+/* Range max input */
+#edit-classes input[type="number"] {
+  text-align: right;
+}
+
+/* Remove button */
+#edit-classes input[type="submit"] {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+#edit-classes input[type="submit"]:hover {
+  background-color: #c82333;
+}
+
+/* Drag handle (weight column) */
+#edit-classes .tabledrag-handle {
+  padding-right: 1rem;
+}
+
+#edit-classes .tabledrag-handle .handle {
+  width: 20px;
+  height: 20px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23666'%3E%3Cpath d='M9 3h2v2H9V3zm0 4h2v2H9V7zm0 4h2v2H9v-2zm0 4h2v2H9v-2zm0 4h2v2H9v-2zm4-16h2v2h-2V3zm0 4h2v2h-2V7zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2z'/%3E%3C/svg%3E") center no-repeat;
+  background-size: contain;
+  display: inline-block;
+  cursor: move;
+}
+
+/* Add class section */
+#edit-add-class {
+  margin-top: 1.5rem;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+#edit-add-class summary {
+  font-weight: 600;
+  cursor: pointer;
+  color: #0073aa;
+}
+
+#edit-add-class summary:hover {
+  color: #005177;
+}
+
+#edit-add-class .form-item {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+#edit-add-class input[type="submit"] {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#edit-add-class input[type="submit"]:hover {
+  background-color: #218838;
+}
+
+/* Color preview badge */
+#edit-classes .color-preview {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #edit-classes td {
+    font-size: 0.875rem;
+    padding: 0.3rem;
+  }
+
+  #edit-classes input[type="color"] {
+    width: 50px;
+    height: 35px;
+  }
+
+  #edit-classes input[type="submit"] {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.75rem;
+  }
+}
