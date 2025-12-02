@@ -61,7 +61,37 @@ class DictionaryItem extends ListStringItem {
   public static function defaultStorageSettings(): array {
     return [
       'dictionary_type' => '',
+      // Use callback function for dynamic values from dictionary.
+      'allowed_values_function' => '\Drupal\ps_dictionary\Plugin\Field\FieldType\DictionaryItem::getAllowedValuesCallback',
     ] + parent::defaultStorageSettings();
+  }
+
+  /**
+   * Callback to provide allowed values dynamically from dictionary.
+   *
+   * This function is called by options_allowed_values() to populate
+   * the allowed values for this field type.
+   *
+   * @param \Drupal\Core\Field\FieldStorageDefinitionInterface $definition
+   *   The field storage definition.
+   * @param \Drupal\Core\Entity\FieldableEntityInterface|null $entity
+   *   (optional) The entity context.
+   * @param bool $cacheable
+   *   (optional) Whether the values should be cached statically.
+   *
+   * @return array
+   *   An array of allowed values (code => label).
+   */
+  public static function getAllowedValuesCallback(FieldStorageDefinitionInterface $definition, $entity = NULL, &$cacheable = TRUE): array {
+    $dictionary_type = $definition->getSetting('dictionary_type');
+
+    if (!$dictionary_type) {
+      return [];
+    }
+
+    /** @var \Drupal\ps_dictionary\Service\DictionaryManagerInterface $manager */
+    $manager = \Drupal::service('ps_dictionary.manager');
+    return $manager->getOptions($dictionary_type);
   }
 
   /**

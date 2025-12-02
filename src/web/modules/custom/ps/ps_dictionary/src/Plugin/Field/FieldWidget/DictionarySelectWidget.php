@@ -75,33 +75,42 @@ class DictionarySelectWidget extends OptionsSelectWidget implements ContainerFac
    * {@inheritdoc}
    */
   public function formElement(FieldItemListInterface $items, $delta, array $element, array &$form, FormStateInterface $form_state): array {
+    // Let parent handle everything - it will use allowed_values_function
+    // automatically via getOptionsProvider().
     $element = parent::formElement($items, $delta, $element, $form, $form_state);
 
-    // Load options from dictionary.
-    // Read from field STORAGE settings (structural), not instance settings.
+    // Add helpful description if dictionary type is not configured.
     $dictionary_type = $this->fieldDefinition
       ->getFieldStorageDefinition()
       ->getSetting('dictionary_type');
-    if ($dictionary_type) {
-      $element['#options'] = $this->dictionaryManager->getOptions($dictionary_type);
-
-      // Add empty option if field is not required.
-      if (!$this->fieldDefinition->isRequired()) {
-        $element['#empty_option'] = $this->t('- None -');
-        $element['#empty_value'] = '';
-      }
-
-      // If no options are found, provide a helpful note.
-      if (empty($element['#options'])) {
-        $element['#description'] = $this->t('No entries found for dictionary type @type. Please add entries at /admin/ps/structure/dictionaries/@type/entries.', ['@type' => $dictionary_type]);
-      }
-    }
-    else {
-      $element['#options'] = [];
-      $element['#description'] = $this->t('Dictionary type not configured in the field storage settings. Edit the field storage to select a dictionary type.');
+    
+    if (!$dictionary_type) {
+      $element['#description'] = $this->t('Dictionary type not configured. Please configure the field storage settings.');
     }
 
     return $element;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function massageFormValues(array $values, array $form, FormStateInterface $form_state): array {
+    $massaged = parent::massageFormValues($values, $form, $form_state);
+
+    // Fix: parent returns nested array structure [0][0][value] instead of [0][value]
+    // Flatten the structure for single-value fields
+    $fixed = [];
+    foreach ($massaged as $delta => $item) {
+      if (is_array($item) && isset($item[0]) && is_array($item[0])) {
+        // Nested structure - extract the inner array
+        $fixed[$delta] = $item[0];
+      }
+      else {
+        $fixed[$delta] = $item;
+      }
+    }
+
+    return $fixed;
   }
 
 }
