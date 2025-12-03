@@ -116,4 +116,24 @@ final class SurfaceDefaultWidget extends WidgetBase {
     return $element;
   }
 
+  /**
+   * {@inheritdoc}
+   */
+  public function massageFormValues(array $values, array $form, FormStateInterface $form_state): array {
+    $massaged = [];
+    
+    foreach ($values as $delta => $value) {
+      // Extract values from nested containers (row_value_unit and row_classification)
+      $massaged[$delta] = [
+        'value' => $value['row_value_unit']['value'] ?? NULL,
+        'unit' => $value['row_value_unit']['unit'] ?? NULL,
+        'type' => $value['row_classification']['type'] ?? NULL,
+        'nature' => $value['row_classification']['nature'] ?? NULL,
+        'qualification' => $value['row_classification']['qualification'] ?? NULL,
+      ];
+    }
+    
+    return $massaged;
+  }
+
 }
