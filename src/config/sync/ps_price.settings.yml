@@ -1,0 +1,18 @@
+_core:
+  default_config_hash: Hvp7irbPEWjz0wDcTOTuCZeHVFFlc5Ve3JYK0y3KdiY
+default_currency: EUR
+transaction_field_candidates:
+  - field_transaction_type
+  - field_operation_code
+flag_visibility:
+  LOC:
+    - is_charges_included
+    - is_from
+    - is_on_request
+  VEN:
+    - is_vat_excluded
+    - is_from
+    - is_on_request
+  COW:
+    - is_from
+    - is_on_request

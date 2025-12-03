@@ -1,0 +1,15 @@
+uuid: 99b8e107-c400-4607-911d-c94b5fa630b8
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 8SNe96C58QL0Lx6l7p-rKjS_bhikrNblDQAGUiK7Qzw
+id: agent_role_transaction
+dictionary_type: agent_role
+code: TRANSACTION
+label: 'Transaction Agent'
+description: 'Agent managing the transaction process'
+weight: 10
+deprecated: false
+metadata:
+  responsibility: negotiation

@@ -1,0 +1,9 @@
+_core:
+  default_config_hash: j5AUFvqo-MUva7wUqWG_zQHjYM6L44krm3dkzQdwZLo
+bo_editable_fields:
+  - email
+  - phone
+  - fax
+require_email: true
+require_phone: false
+validate_phone_format: false

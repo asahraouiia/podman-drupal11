@@ -35,11 +35,18 @@ module:
   path: 0
   path_alias: 0
   pgsql: 0
-  ps_dico_types: 0
+  ps: 0
+  ps_agent: 0
+  ps_diagnostic: 0
+  ps_dictionary: 0
+  ps_division: 0
+  ps_features: 0
+  ps_price: 0
   search: 0
   shortcut: 0
   system: 0
   taxonomy: 0
+  telephone: 0
   text: 0
   toolbar: 0
   update: 0
@@ -50,4 +57,5 @@ module:
 theme:
   olivero: 0
   claro: 0
+  gin: 0
 profile: standard

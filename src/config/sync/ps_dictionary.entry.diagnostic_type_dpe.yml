@@ -1,0 +1,16 @@
+uuid: 95d47b4d-1302-46ef-a3db-b286ff66fa8d
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Dgy75af4BVI7HMYw9yTgoyG3ShLLV1DVwpT-sEVTyzU
+id: diagnostic_type_dpe
+dictionary_type: diagnostic_type
+code: DPE
+label: 'DPE (Energy Performance)'
+description: 'Diagnostic de Performance Énergétique'
+weight: 0
+deprecated: false
+metadata:
+  full_name: 'Diagnostic de Performance Énergétique'
+  category: energy

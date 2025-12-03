@@ -1,0 +1,14 @@
+uuid: 6aac3730-c4fa-4d7b-9648-d503468a3a8c
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 29TPuB420515k6xkaswI8ime2e5i68oxX80BHTeD93k
+id: property_type_sale
+dictionary_type: property_type
+code: SALE
+label: 'For Sale'
+description: 'Property available for purchase'
+weight: 0
+deprecated: false
+metadata: {  }

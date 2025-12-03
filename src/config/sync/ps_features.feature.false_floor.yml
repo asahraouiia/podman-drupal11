@@ -1,0 +1,19 @@
+uuid: eb0e194b-5efe-4f9e-806c-27d2b63ae9d0
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: FYvIdLkMp5yEv-qdnjnydZ2_yEILWndI3X9aXvyB3tI
+id: false_floor
+label: 'False floor'
+description: 'Raised or false floor information'
+value_type: string
+dictionary_type: null
+unit: null
+is_required: false
+group: equipments
+weight: 3
+is_facetable: false
+validation_rules: {  }
+metadata:
+  icon: layers

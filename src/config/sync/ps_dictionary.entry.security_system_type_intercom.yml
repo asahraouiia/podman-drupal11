@@ -1,0 +1,14 @@
+uuid: 0d734d20-25f3-4d28-a442-564747faae83
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: kL9aVs6ltRD9C1nukjTmMh6HTPN5Yp01h7CUQE1sfIM
+id: security_system_type_intercom
+dictionary_type: security_system_type
+code: INTERCOM
+label: Intercom
+description: 'Audio/video intercom system.'
+weight: 20
+deprecated: false
+metadata: {  }

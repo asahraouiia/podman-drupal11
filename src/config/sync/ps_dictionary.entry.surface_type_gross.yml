@@ -1,0 +1,14 @@
+uuid: 0882a55e-434c-4ee4-9aae-12b0309fb267
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Bnj8TdORd8A8JOqxAc8E9449KmQZ-RCNtIMd4OikOmY
+id: surface_type_gross
+dictionary_type: surface_type
+code: GROSS
+label: 'Gross Area'
+description: 'Gross total area'
+weight: 30
+deprecated: false
+metadata: {  }

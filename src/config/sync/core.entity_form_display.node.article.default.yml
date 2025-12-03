@@ -6,16 +6,13 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_image
-    - field.field.node.article.field_mondatary_type
     - field.field.node.article.field_tags
-    - field.field.node.article.field_transaction_type
     - image.style.thumbnail
     - node.type.article
   module:
     - comment
     - image
     - path
-    - ps_dico_types
     - text
 _core:
   default_config_hash: ewbd6G2uX456-bgwseM2Q-KQG3RkASoyHmTh-XR3oLU
@@ -54,12 +51,6 @@ content:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-  field_mondatary_type:
-    type: ps_dictionary_select
-    weight: 27
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_tags:
     type: entity_reference_autocomplete_tags
     weight: 4
@@ -69,12 +60,6 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
-    third_party_settings: {  }
-  field_transaction_type:
-    type: ps_dictionary_select
-    weight: 26
-    region: content
-    settings: {  }
     third_party_settings: {  }
   langcode:
     type: language_select

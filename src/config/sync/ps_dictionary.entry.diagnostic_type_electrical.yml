@@ -1,0 +1,15 @@
+uuid: 34e84d39-8b28-4733-9040-33c65b016662
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: js3BfOsG1l7GcBXykCua8UcNEEQ6hh5Z3X_X7KfUHwk
+id: diagnostic_type_electrical
+dictionary_type: diagnostic_type
+code: ELECTRICAL
+label: 'Electrical Installation'
+description: 'Electrical safety diagnostic'
+weight: 50
+deprecated: false
+metadata:
+  category: safety

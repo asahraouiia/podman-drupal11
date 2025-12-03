@@ -1,0 +1,14 @@
+uuid: 595ec21e-1d73-47b2-8916-20be713fec73
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: CXWD-lT_wgt6jnt9Zaf4UckD5dtFmwXu36pCw6j1TAs
+id: heating_system_type_gas
+dictionary_type: heating_system_type
+code: GAS
+label: Gas
+description: 'Gas heating system'
+weight: 3
+deprecated: false
+metadata: {  }

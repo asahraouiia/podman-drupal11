@@ -1,0 +1,10 @@
+uuid: 87655949-d05b-4c10-89f5-9c30820fcdf9
+langcode: fr
+status: true
+dependencies: {  }
+id: mandate_type
+label: 'Mandate type'
+description: ''
+is_translatable: true
+locked: false
+metadata: {  }

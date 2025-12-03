@@ -1,0 +1,14 @@
+uuid: 8dbab06d-e7ea-4576-b935-527054554ce8
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: u03jziwR3HXj_1L01c8aFtgyLt1tJliGyHwlu-nFHAw
+id: transaction_type_office
+dictionary_type: transaction_type
+code: OFFICE
+label: Office
+description: 'Office spaces'
+weight: 0
+deprecated: false
+metadata: {  }

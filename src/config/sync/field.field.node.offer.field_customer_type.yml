@@ -1,0 +1,21 @@
+uuid: e2084b0a-ef05-451d-9639-5ac3cce36948
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_customer_type
+    - node.type.offer
+  module:
+    - ps_dictionary
+id: node.offer.field_customer_type
+field_name: field_customer_type
+entity_type: node
+bundle: offer
+label: 'Customer type'
+description: ''
+required: 0
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: ps_dictionary

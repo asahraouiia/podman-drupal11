@@ -1,0 +1,16 @@
+uuid: 82f0022a-457b-4657-b052-059dc7c9a968
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: LuOH6uVqAhNvvKPgfCoPHUx3c9k0kmmQXUeMD_XE69E
+id: currency_eur
+dictionary_type: currency
+code: EUR
+label: 'Euro (€)'
+description: 'European Union currency'
+weight: 0
+deprecated: false
+metadata:
+  symbol: €
+  iso_code: EUR

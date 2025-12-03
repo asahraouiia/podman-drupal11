@@ -1,0 +1,19 @@
+uuid: 70216366-de27-4134-ba23-eb9683318713
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: FB8WdpCaM6ND0JaasaBZAMUtvpOajb2gSh7f4L74i9s
+id: security_system
+label: 'Security system'
+description: 'Type of security system'
+value_type: string
+dictionary_type: null
+unit: null
+is_required: false
+group: services
+weight: 5
+is_facetable: false
+validation_rules: {  }
+metadata:
+  icon: shield-alt

@@ -1,0 +1,15 @@
+uuid: 15d7a8e9-d9a0-4e1a-9dea-70bed72016ac
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: GwkRd8KO9vYDuSQY_JdemOssQc3fcKkq_TKlqlSgT0c
+id: surface_type_nia
+dictionary_type: surface_type
+code: NIA
+label: 'NIA (Net Internal Area)'
+description: 'Net internal area'
+weight: 20
+deprecated: false
+metadata:
+  full_name: 'Net Internal Area'

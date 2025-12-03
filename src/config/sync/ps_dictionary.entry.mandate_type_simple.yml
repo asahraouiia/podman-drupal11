@@ -1,0 +1,12 @@
+uuid: 4f926cee-61bd-41af-804a-3038e8d953ca
+langcode: fr
+status: true
+dependencies: {  }
+id: mandate_type_simple
+dictionary_type: mandate_type
+code: Simple
+label: Simple
+description: ''
+weight: 0
+deprecated: false
+metadata: {  }

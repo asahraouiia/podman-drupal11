@@ -1,0 +1,16 @@
+uuid: 43eeaa6b-8936-418e-8663-2ed553793325
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 8msVabYxMQtv6V7H2KE20__Q-qh5bYJevwMplFZuL-E
+id: currency_usd
+dictionary_type: currency
+code: USD
+label: 'US Dollar ($)'
+description: 'United States Dollar'
+weight: 1
+deprecated: false
+metadata:
+  symbol: $
+  iso_code: USD

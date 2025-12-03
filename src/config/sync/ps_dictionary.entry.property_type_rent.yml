@@ -1,0 +1,14 @@
+uuid: ba9a3ac6-afa9-4aec-8302-8ab5b39f4b74
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: oAznf35Wv8Kme8US7m_K_0AfZkE7iQMSFEU8IzL1pLM
+id: property_type_rent
+dictionary_type: property_type
+code: RENT
+label: 'For Rent'
+description: 'Property available for lease'
+weight: 1
+deprecated: false
+metadata: {  }

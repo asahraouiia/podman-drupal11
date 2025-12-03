@@ -1,0 +1,14 @@
+uuid: 0e053518-de04-4931-8556-2bc239d46c08
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: KoWFTLW74wAEhDLrZuWaMTtFOb2AztbwRsQ777dt_Eg
+id: air_conditioning_type_multi_split
+dictionary_type: air_conditioning_type
+code: MULTI_SPLIT
+label: Multi-split
+description: 'Multiple indoor units on one outdoor condenser'
+weight: 2
+deprecated: false
+metadata: {  }

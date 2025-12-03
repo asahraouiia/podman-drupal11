@@ -1,0 +1,14 @@
+uuid: 6f997318-9380-4ddd-9447-876ab4f3d2b1
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: HyuuR5ZWH24pOolI3RnzYQS-3YlkggKQKfEh4BfKdwo
+id: transaction_type_coworking
+dictionary_type: transaction_type
+code: COWORKING
+label: Coworking
+description: 'Coworking spaces'
+weight: 3
+deprecated: false
+metadata: {  }

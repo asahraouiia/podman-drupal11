@@ -1,0 +1,12 @@
+uuid: 3e626837-9ec9-41b8-ac23-3efa1a371a4a
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: '-TsM4Yhgt6rNPxnT1k81c8A0tdcAypJ162yNoDlwrKk'
+id: cabling_type
+label: 'Computer Cabling Type'
+description: 'Types of computer network cabling systems.'
+is_translatable: false
+locked: true
+metadata: {  }

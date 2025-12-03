@@ -1,0 +1,12 @@
+uuid: 85ffa3b8-e637-4095-b5c7-0474f75c9e3d
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ljVp5z4dccKFtoj4fA6auaGbjmFrbuC-HQzlTj5BKpI
+id: currency
+label: Currency
+description: 'Supported currency codes (ISO 4217)'
+is_translatable: false
+locked: true
+metadata: {  }

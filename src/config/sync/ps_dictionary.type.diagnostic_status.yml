@@ -1,0 +1,12 @@
+uuid: d2878cec-6197-46ca-be8e-6f6b6cb0c7be
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: HluNa1ozQOKAsaWLJQSd5_RqK-ouGzGOG66Jy_dLkI8
+id: diagnostic_status
+label: 'Diagnostic Status'
+description: 'Status of diagnostics (valid, expired, pending, not required)'
+is_translatable: false
+locked: true
+metadata: {  }

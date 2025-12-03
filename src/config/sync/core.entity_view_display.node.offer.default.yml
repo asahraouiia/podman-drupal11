@@ -1,0 +1,48 @@
+uuid: 74378e45-6f6d-4bd8-8378-4e61c67c5271
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.offer.field_customer_type
+    - field.field.node.offer.field_mandate_type
+    - field.field.node.offer.field_surface
+    - node.type.offer
+  module:
+    - ps_dictionary
+    - ps_division
+    - user
+id: node.offer.default
+targetEntityType: node
+bundle: offer
+mode: default
+content:
+  field_customer_type:
+    type: ps_dictionary_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_mandate_type:
+    type: ps_dictionary_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_surface:
+    type: ps_surface_default
+    label: above
+    settings:
+      show_unit: true
+      show_qualification: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

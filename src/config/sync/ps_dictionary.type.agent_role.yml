@@ -1,0 +1,12 @@
+uuid: 06f59b1f-15e5-4121-91a6-7503d3cb2fb9
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: IdGwuSpygLrt5fPJgjoM9rrysnhewfuO1YORplGUV7w
+id: agent_role
+label: 'Agent Role'
+description: 'Roles of agents in property transactions'
+is_translatable: false
+locked: true
+metadata: {  }

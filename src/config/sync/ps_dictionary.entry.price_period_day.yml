@@ -1,0 +1,14 @@
+uuid: 2b53963d-4607-45cf-acdf-319aa5c033de
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: WNlfYrB8Phe3kJZo9d0UgKAsjr7jd_LRHD0lAJFM-iA
+id: price_period_day
+dictionary_type: price_period
+code: DAY
+label: 'Per day'
+description: null
+weight: 10
+deprecated: false
+metadata: {  }

@@ -1,8 +1,0 @@
-uuid: 4973d5f3-62b0-4798-9201-8bbb9be6394b
-langcode: fr
-status: true
-dependencies: {  }
-id: vente
-label: Vente
-type: transaction_type
-weight: '0'

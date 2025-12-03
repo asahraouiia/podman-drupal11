@@ -1,0 +1,12 @@
+uuid: c42c88a1-6014-459a-80b0-cbfad8675c15
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: bYbEXTi2Rb21AY4_rbo2VC60vuSxkABrLqUyvvilVfE
+id: security_system_type
+label: 'Security System Type'
+description: 'Types of security systems and access control.'
+is_translatable: false
+locked: true
+metadata: {  }

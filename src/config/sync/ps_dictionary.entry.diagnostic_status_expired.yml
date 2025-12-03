@@ -1,0 +1,15 @@
+uuid: d5275738-6f34-4966-b7c6-cd153f4d3ca7
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: jH_YHgvE3B_Vfey9SXHkOaWEQ3rO2w1-RtFigJZ6UBI
+id: diagnostic_status_expired
+dictionary_type: diagnostic_status
+code: EXPIRED
+label: Expired
+description: 'Diagnostic has expired'
+weight: 10
+deprecated: false
+metadata:
+  color: red

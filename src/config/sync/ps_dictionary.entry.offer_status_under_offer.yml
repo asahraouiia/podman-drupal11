@@ -1,0 +1,14 @@
+uuid: f87dc946-b958-4f7d-b2af-d75ec9d08e6f
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: nYfr5EihZcgxaNC8yOAgAgE0ezgboLwhqFft6fCrQzw
+id: offer_status_under_offer
+dictionary_type: offer_status
+code: UNDER_OFFER
+label: 'Under Offer'
+description: 'Offer is under negotiation'
+weight: 1
+deprecated: false
+metadata: {  }

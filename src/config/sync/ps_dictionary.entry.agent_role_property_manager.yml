@@ -1,0 +1,15 @@
+uuid: ede80481-509e-4b51-95c2-bfc636838d8f
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: '-_W5dv7ZrS7yuf28BGeoF7jwvbQvlPkqvV20YFtKlTU'
+id: agent_role_property_manager
+dictionary_type: agent_role
+code: PROPERTY_MANAGER
+label: 'Property Manager'
+description: 'Agent managing the property on behalf of owner'
+weight: 20
+deprecated: false
+metadata:
+  responsibility: management

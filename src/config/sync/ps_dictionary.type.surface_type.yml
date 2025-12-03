@@ -1,0 +1,12 @@
+uuid: 5316569a-0bb6-4f46-b46c-0f614535624f
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: aqVKkgKm1OmJkaRCTy_iNkptToEjLpEObybh-7uXM8k
+id: surface_type
+label: 'Surface Type'
+description: 'Types of surface measurements (usable, GLA, NIA, etc.)'
+is_translatable: false
+locked: true
+metadata: {  }

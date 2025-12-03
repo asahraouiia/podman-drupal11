@@ -1,0 +1,15 @@
+uuid: 485e7ec5-7f58-4048-9ec0-ae515f92c8ad
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: '-4GrPeCW2QaxzamtM-vxWEJWwK5FwQHF_k1c3t6F6oI'
+id: agent_role_listing
+dictionary_type: agent_role
+code: LISTING
+label: 'Listing Agent'
+description: 'Agent responsible for listing the property'
+weight: 0
+deprecated: false
+metadata:
+  responsibility: marketing

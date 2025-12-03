@@ -1,0 +1,14 @@
+uuid: e38005a8-797d-486c-96e9-98748d898f9f
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: nK7MIbXCgvn6KsXF3_iMXRrmAcz2ZAfbTjE9fgTG3GM
+id: transaction_type_retail
+dictionary_type: transaction_type
+code: RETAIL
+label: Retail
+description: 'Retail and commercial spaces'
+weight: 2
+deprecated: false
+metadata: {  }

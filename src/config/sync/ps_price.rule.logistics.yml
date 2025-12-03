@@ -1,0 +1,16 @@
+uuid: 856311be-bec0-443e-b24a-16a55a9d19e2
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 2j8ja8wKPdePojOwF5oBpdV57l5dpoI_dx9ovrwaCeg
+id: logistics
+label: 'Logistics - Location'
+transaction_type: LOGISTICS
+unit_code: M2
+period_code: YEAR
+currency_code: EUR
+is_vat_excluded: true
+is_charges_included: false
+weight: 20
+locked: true

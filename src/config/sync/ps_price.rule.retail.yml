@@ -1,0 +1,16 @@
+uuid: 3d4df823-d73f-4ce8-977c-d988149cb5a8
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: o51tNjrk9o1L0V0cbpz0olumKckzQ9HfSyEGHScymhA
+id: retail
+label: 'Retail - Location'
+transaction_type: RETAIL
+unit_code: M2
+period_code: YEAR
+currency_code: EUR
+is_vat_excluded: true
+is_charges_included: false
+weight: 10
+locked: true

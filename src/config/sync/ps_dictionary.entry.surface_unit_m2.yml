@@ -1,0 +1,16 @@
+uuid: 93339174-61c0-4280-a450-75896f10354a
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 0C0QmEN0nORmElTIhETWMxf_jlkzI-6O6S6-_rdo1lc
+id: surface_unit_m2
+dictionary_type: surface_unit
+code: M2
+label: 'm² (Square meters)'
+description: 'Square meters (metric)'
+weight: 0
+deprecated: false
+metadata:
+  symbol: m²
+  conversion_factor: 1.0

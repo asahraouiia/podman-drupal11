@@ -1,0 +1,14 @@
+uuid: 65a59ec2-e1dc-4246-80fd-1680abb01262
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: qfp-zZmkMEzttHhwDcldTFgPFo68W55i9F2RDDuaOPU
+id: property_type_temp_rent
+dictionary_type: property_type
+code: TEMP_RENT
+label: 'Temporary Rent'
+description: 'Short-term rental'
+weight: 3
+deprecated: false
+metadata: {  }

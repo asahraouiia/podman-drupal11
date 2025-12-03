@@ -1,0 +1,19 @@
+uuid: e34dd927-9f42-44b8-b299-1cd1bb5f772f
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: cwbahPncFZNUhjRyRNdj3zyaGtezc6yKwmT7tyRF47U
+id: building_condition
+label: 'Condition of building'
+description: 'Overall condition of the building'
+value_type: string
+dictionary_type: null
+unit: null
+is_required: false
+group: building_condition
+weight: 0
+is_facetable: false
+validation_rules: {  }
+metadata:
+  icon: building

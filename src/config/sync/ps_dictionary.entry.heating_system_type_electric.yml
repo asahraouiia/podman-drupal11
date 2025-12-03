@@ -1,0 +1,14 @@
+uuid: ea84bab2-b263-4286-9053-84d497b0e581
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: NgLw2-VYfqiy5IBvXp-dUhFCNBRhI5nVAWusrDgEipU
+id: heating_system_type_electric
+dictionary_type: heating_system_type
+code: ELECTRIC
+label: Electric
+description: 'Electric heating system'
+weight: 2
+deprecated: false
+metadata: {  }

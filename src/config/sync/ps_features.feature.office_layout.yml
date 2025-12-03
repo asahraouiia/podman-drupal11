@@ -1,0 +1,19 @@
+uuid: f37a5626-f1ff-4f7d-b8fa-fde8c3ee8fa4
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: bixkS03sfbHpx9uevyKjdS2IYBUipxYKIViMBQZEinE
+id: office_layout
+label: 'Office layout'
+description: 'Description of office layout'
+value_type: string
+dictionary_type: null
+unit: null
+is_required: false
+group: services
+weight: 1
+is_facetable: false
+validation_rules: {  }
+metadata:
+  icon: building

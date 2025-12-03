@@ -1,0 +1,14 @@
+uuid: a773e4ad-c683-4647-84d6-036f77040f13
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 3kpb5DHGRj7-QDK0n8-TqiERJXzpiVxUV4mmspW-HvA
+id: price_value_type_max
+dictionary_type: price_value_type
+code: MAX
+label: Maximum
+description: null
+weight: 1
+deprecated: false
+metadata: {  }

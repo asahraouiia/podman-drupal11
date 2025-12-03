@@ -1,0 +1,8 @@
+_core:
+  default_config_hash: pyfjApm0s-ejJA6gtAXmlzH0d7maol3th0Hsu27zPDw
+uuid: null
+langcode: en
+allow_unknown_codes: false
+auto_create_on_unknown: false
+default_status_new_items: inactive
+deprecated_policy: soft

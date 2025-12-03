@@ -1,0 +1,14 @@
+uuid: aa63d4bf-2cb2-400c-8234-8ebe7e996386
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 0Oxb77_nomxwa6MnH7CFqq3EOY3JFc1x03d7wvXDXnA
+id: security_system_type_badge
+dictionary_type: security_system_type
+code: BADGE
+label: 'Badge / access control'
+description: 'Badge or access control system.'
+weight: 30
+deprecated: false
+metadata: {  }

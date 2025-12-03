@@ -1,0 +1,22 @@
+uuid: f3050daf-88b0-42d6-b998-68eae7b586df
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - ps_dictionary
+id: node.field_customer_type
+field_name: field_customer_type
+entity_type: node
+type: ps_dictionary
+settings:
+  dictionary_type: customer_type
+  allowed_values: {  }
+  allowed_values_function: '\Drupal\ps_dictionary\Plugin\Field\FieldType\DictionaryItem::getAllowedValuesCallback'
+module: ps_dictionary
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

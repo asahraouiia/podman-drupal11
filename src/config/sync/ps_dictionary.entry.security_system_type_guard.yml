@@ -1,0 +1,14 @@
+uuid: f9eb08d5-e941-419b-8d61-a858edc7f2c0
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: iRN5zuok0sZ1AT9USs499c6zc-JmmEsgOBzww3X2foM
+id: security_system_type_guard
+dictionary_type: security_system_type
+code: GUARD
+label: 'On-site security guard'
+description: 'Security guard or concierge on site.'
+weight: 50
+deprecated: false
+metadata: {  }

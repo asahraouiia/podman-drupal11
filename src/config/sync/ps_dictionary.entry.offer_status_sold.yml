@@ -1,0 +1,14 @@
+uuid: a6516240-a21a-4a62-8c52-48df2c6b0227
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 6qDb-NW-XXVZDv1OjBQTElfPhpR0n8vXHeIs9dHZC44
+id: offer_status_sold
+dictionary_type: offer_status
+code: SOLD
+label: Sold
+description: 'Offer has been sold or leased'
+weight: 2
+deprecated: false
+metadata: {  }

@@ -1,0 +1,16 @@
+uuid: 8a35519f-47c0-4078-b3e7-f5c7c990b8a6
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: '-hUrwNcnmalRMgdvUrwIEGlF3twdo7Sd49s5147Lsqs'
+id: coworking
+label: 'Coworking - Location'
+transaction_type: COWORKING
+unit_code: DESK
+period_code: DAY
+currency_code: EUR
+is_vat_excluded: false
+is_charges_included: true
+weight: 30
+locked: true

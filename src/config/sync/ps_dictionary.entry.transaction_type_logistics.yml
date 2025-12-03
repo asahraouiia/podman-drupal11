@@ -1,0 +1,14 @@
+uuid: 0f107774-89de-41e5-bda2-5f4602255a2a
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: fkPlLaQWOJ3O2VxuO1ErJFTtVRAusrX67sxm2EXW8w4
+id: transaction_type_logistics
+dictionary_type: transaction_type
+code: LOGISTICS
+label: Logistics
+description: 'Warehouses and logistics facilities'
+weight: 1
+deprecated: false
+metadata: {  }

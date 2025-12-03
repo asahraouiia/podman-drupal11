@@ -1,0 +1,12 @@
+uuid: 66a12338-c6c4-4eeb-8d32-3fa76cb4a2d4
+langcode: fr
+status: true
+dependencies: {  }
+id: mandate_type_exclusif
+dictionary_type: mandate_type
+code: Exclusif
+label: Exclusif
+description: ''
+weight: 0
+deprecated: false
+metadata: {  }

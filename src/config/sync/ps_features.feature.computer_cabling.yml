@@ -1,0 +1,19 @@
+uuid: 363ac956-f56c-4380-8547-9dec98db6793
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: JbCshjNPtgvfwU2FXQs6tGF7Uv11eVZ90b4QPLzv8Z8
+id: computer_cabling
+label: 'Computer cabling'
+description: 'Type of computer cabling'
+value_type: dictionary
+dictionary_type: cabling_type
+unit: null
+is_required: false
+group: equipments
+weight: 2
+is_facetable: false
+validation_rules: {  }
+metadata:
+  icon: wifi

@@ -1,0 +1,12 @@
+uuid: 6b08c387-d68c-48fb-825b-cbe0e84252fc
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: gaViyGFVwEciHZprQt7ZVkbcGaDJzGcd2-JqSlj01H8
+id: surface_unit
+label: 'Surface Unit'
+description: 'Units for measuring surface areas'
+is_translatable: false
+locked: true
+metadata: {  }

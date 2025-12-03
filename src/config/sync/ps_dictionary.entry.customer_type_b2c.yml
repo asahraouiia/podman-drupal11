@@ -1,0 +1,12 @@
+uuid: 5baef341-b6a1-4392-88ea-bf84c5fea0ad
+langcode: fr
+status: true
+dependencies: {  }
+id: customer_type_b2c
+dictionary_type: customer_type
+code: B2C
+label: B2C
+description: ''
+weight: 0
+deprecated: false
+metadata: {  }

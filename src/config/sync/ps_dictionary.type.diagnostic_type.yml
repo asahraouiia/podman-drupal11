@@ -1,0 +1,12 @@
+uuid: 00817d61-b199-4600-9ae0-db05f2e4750d
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Fn6lfsArtP-jHXYcj67O8U9qscEFIN1tFSVn50hqdZw
+id: diagnostic_type
+label: 'Diagnostic Type'
+description: 'Types of property diagnostics (DPE, GES, asbestos, lead, etc.)'
+is_translatable: false
+locked: true
+metadata: {  }

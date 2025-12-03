@@ -1,0 +1,12 @@
+uuid: 0bdca279-344d-4990-8b61-ec9781c3d47f
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: nEFznZtxa75O3ONdoRxBSjOVyjiBNkDzztDxyEKuEXU
+id: heating_system_type
+label: 'Heating System Type'
+description: 'Types of heating systems available.'
+is_translatable: false
+locked: true
+metadata: {  }

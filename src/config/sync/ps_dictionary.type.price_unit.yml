@@ -1,0 +1,12 @@
+uuid: 5ccab7b2-5e0d-42ed-9325-db351026e1bb
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: G70FU8dE7KDToeDlep1OcLCq9YZA6uNuzXiLncdIbEk
+id: price_unit
+label: 'Price Unit'
+description: 'Units for expressing prices (per sqm/year, per lot, etc.)'
+is_translatable: false
+locked: true
+metadata: {  }

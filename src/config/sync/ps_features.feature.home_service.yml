@@ -1,0 +1,19 @@
+uuid: ed0db1f5-e1d6-4db8-a31f-e79b85e83a97
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vU7pPUtgLGs03QyGfKaqN4_ZGVUzyt-SATXKEi5mgxM
+id: home_service
+label: 'Home service'
+description: 'Type of home service available'
+value_type: string
+dictionary_type: null
+unit: null
+is_required: false
+group: services
+weight: 0
+is_facetable: false
+validation_rules: {  }
+metadata:
+  icon: concierge-bell

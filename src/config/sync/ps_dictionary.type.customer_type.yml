@@ -1,0 +1,10 @@
+uuid: 6cca3054-9b29-42ee-a7cd-52b34d2c1afb
+langcode: fr
+status: true
+dependencies: {  }
+id: customer_type
+label: 'Customer type'
+description: ''
+is_translatable: false
+locked: false
+metadata: {  }

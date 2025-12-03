@@ -1,0 +1,15 @@
+uuid: 0c1a9332-bb35-42b9-99eb-433be3b1dde5
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: G2t9ZR8HllPKfBCT6K3kG5wpPaVfyV9VRgAHNbFWFB8
+id: diagnostic_status_pending
+dictionary_type: diagnostic_status
+code: PENDING
+label: Pending
+description: 'Diagnostic is in progress'
+weight: 20
+deprecated: false
+metadata:
+  color: orange

@@ -1,0 +1,16 @@
+uuid: e83c3648-5609-406c-8dee-d05711d2324b
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 8ZjzBQdNX3evlu4jJKBn8uBH1gc1VaG4wZ-O94qO_pc
+id: office
+label: 'Office - Location'
+transaction_type: OFFICE
+unit_code: M2
+period_code: YEAR
+currency_code: EUR
+is_vat_excluded: true
+is_charges_included: false
+weight: 0
+locked: true

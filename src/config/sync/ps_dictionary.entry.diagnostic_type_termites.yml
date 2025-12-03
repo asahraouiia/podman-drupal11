@@ -1,0 +1,15 @@
+uuid: 8a70582f-dfa8-4bc6-af1c-433f681fadfd
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: tFCrQMAMlKSmuXseOy7ZHt15IABkJUq2_LSi2Ub6hLA
+id: diagnostic_type_termites
+dictionary_type: diagnostic_type
+code: TERMITES
+label: Termites
+description: 'Termite infestation diagnostic'
+weight: 40
+deprecated: false
+metadata:
+  category: pest

@@ -1,0 +1,15 @@
+uuid: 84743b1e-62ce-4d7b-9c03-db521f5ed21d
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vomuFxv7P7xUTns9CuqZvje4Akspg_wMtQZtwkkp0aI
+id: feature_group_more_information
+dictionary_type: feature_group
+code: MORE_INFORMATION
+label: 'More information'
+description: 'Additional features and details.'
+weight: 30
+deprecated: false
+metadata:
+  icon: info

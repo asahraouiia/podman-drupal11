@@ -1,0 +1,16 @@
+uuid: c3d7c62c-2f87-4c2b-b24c-a73c3f54d12e
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: nUedCa0M7CR2VXLyBrGDVYxCxM7bxZpc-NktOHNvuyc
+id: price_unit_desk
+dictionary_type: price_unit
+code: DESK
+label: Desk
+description: 'Per desk/workstation'
+weight: 10
+deprecated: false
+metadata:
+  unit_symbol: desk
+  calculation: per_unit

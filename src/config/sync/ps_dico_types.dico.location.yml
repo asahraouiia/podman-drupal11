@@ -1,8 +1,0 @@
-uuid: 51702435-a352-4358-928f-33bec0673f25
-langcode: fr
-status: true
-dependencies: {  }
-id: location
-label: Location
-type: transaction_type
-weight: '0'

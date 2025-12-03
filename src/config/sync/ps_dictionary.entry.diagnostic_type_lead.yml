@@ -1,0 +1,16 @@
+uuid: ac192b66-7182-43ea-98ef-f3cae2a69f5d
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: FUDt57_Sp0G8yEnfIc4zcQpTGcC2YPhecfpdRm8GuQ8
+id: diagnostic_type_lead
+dictionary_type: diagnostic_type
+code: LEAD
+label: 'Lead (CREP)'
+description: 'Lead paint detection'
+weight: 30
+deprecated: false
+metadata:
+  full_name: "Constat de Risque d'Exposition au Plomb"
+  category: health

@@ -1,0 +1,12 @@
+uuid: e6fbd083-8b88-4b97-8a27-47678ad08a87
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 9Pct4aGUiDIi_jYdBbeTi1JkpqacfA6HFdhSdc9WZuk
+id: property_type
+label: 'Property Type'
+description: 'Types of properties (sale, rent, both, temporary rent)'
+is_translatable: false
+locked: true
+metadata: {  }

@@ -1,0 +1,14 @@
+uuid: 053f5ba4-9505-41c4-a410-d470137a5e56
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: RydguIpuSEpJ8W2BA2q9uXQW0Jbacg0zUYgiq4jg53A
+id: air_conditioning_type_vrv
+dictionary_type: air_conditioning_type
+code: VRV
+label: 'VRV / VRF'
+description: 'Variable Refrigerant Volume/Flow system'
+weight: 3
+deprecated: false
+metadata: {  }

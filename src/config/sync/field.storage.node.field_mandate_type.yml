@@ -1,0 +1,22 @@
+uuid: fadf9aee-3579-4fd8-a864-d90a3ef407e8
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - ps_dictionary
+id: node.field_mandate_type
+field_name: field_mandate_type
+entity_type: node
+type: ps_dictionary
+settings:
+  dictionary_type: mandate_type
+  allowed_values_function: '\Drupal\ps_dictionary\Plugin\Field\FieldType\DictionaryItem::getAllowedValuesCallback'
+  allowed_values: {  }
+module: ps_dictionary
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,15 @@
+uuid: ae4601d4-8fd6-488e-bfc2-3c047eb1adb1
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: zWUVt8gTqH5rRzKNxABp7eQt9nJq2-4p0s6KhAlC5rs
+id: diagnostic_status_not_required
+dictionary_type: diagnostic_status
+code: NOT_REQUIRED
+label: 'Not Required'
+description: 'Diagnostic not required for this property'
+weight: 30
+deprecated: false
+metadata:
+  color: gray

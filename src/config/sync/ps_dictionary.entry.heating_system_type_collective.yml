@@ -1,0 +1,14 @@
+uuid: 0560d46a-caff-44e0-8558-f5c5ef8a28bb
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: cTSJfzrl1vAUFYQ-HSvj5pu14P6PnvPQtCs7r88hBds
+id: heating_system_type_collective
+dictionary_type: heating_system_type
+code: COLLECTIVE
+label: Collective
+description: 'Collective/central heating system'
+weight: 1
+deprecated: false
+metadata: {  }

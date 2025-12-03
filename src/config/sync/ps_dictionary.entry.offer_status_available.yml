@@ -1,0 +1,14 @@
+uuid: 91342a12-bc8d-4b24-a1a8-11834304bb66
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 6dHGuF50MdxkaXlUU2EKYt5gZO9l87WlGUsqoi8X6L8
+id: offer_status_available
+dictionary_type: offer_status
+code: AVAILABLE
+label: Available
+description: 'Offer is available'
+weight: 0
+deprecated: false
+metadata: {  }

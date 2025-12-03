@@ -1,0 +1,12 @@
+uuid: c47d0c42-9834-41af-b85c-fad4800d1a2b
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 3r2wYIgWu15lQvKabX_W-xoNC0LBDMSixZW07xhsOTc
+id: offer_status
+label: 'Offer Status'
+description: 'Current status of property offers'
+is_translatable: false
+locked: true
+metadata: {  }

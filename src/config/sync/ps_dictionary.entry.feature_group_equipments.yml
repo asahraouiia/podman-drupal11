@@ -1,0 +1,15 @@
+uuid: 30cb6027-42f6-4c74-b3da-cd57f952fcda
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: UUVSGtR34PBA7prZShjCA6sMBlmy81JPahfIoHrECmY
+id: feature_group_equipments
+dictionary_type: feature_group
+code: EQUIPMENTS
+label: Equipments
+description: 'Equipment and appliances available in the property.'
+weight: 0
+deprecated: false
+metadata:
+  icon: tools

@@ -1,0 +1,18 @@
+uuid: b8417d67-d12c-4b10-ac92-123a33dd1ae4
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vd1VI6hOZpr-H6--_MG2zwuK0btxxSUq2ujOOlDnR2U
+id: several_courtyards
+label: 'Several courtyards'
+description: 'Multiple courtyards present'
+value_type: flag
+dictionary_type: null
+unit: null
+is_required: false
+group: more_information
+weight: 0
+is_facetable: false
+validation_rules: {  }
+metadata: {  }

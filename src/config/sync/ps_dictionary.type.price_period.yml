@@ -1,0 +1,12 @@
+uuid: e7963841-fcca-447c-8356-e439a903ee62
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: T4B0sKtJYZiU6qiWiyd9suBAQyFyvJ7qSFCe1IRBfxE
+id: price_period
+label: 'Price Period'
+description: 'Periods for expressing recurring prices (month, year, etc.)'
+is_translatable: false
+locked: true
+metadata: {  }

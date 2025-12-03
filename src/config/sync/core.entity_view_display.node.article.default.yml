@@ -7,15 +7,12 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_image
-    - field.field.node.article.field_mondatary_type
     - field.field.node.article.field_tags
-    - field.field.node.article.field_transaction_type
     - image.style.wide
     - node.type.article
   module:
     - comment
     - image
-    - ps_dico_types
     - text
     - user
 _core:
@@ -52,14 +49,6 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
-  field_mondatary_type:
-    type: ps_dictionary_label
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 8
-    region: content
   field_tags:
     type: entity_reference_label
     label: above
@@ -67,14 +56,6 @@ content:
       link: true
     third_party_settings: {  }
     weight: 4
-    region: content
-  field_transaction_type:
-    type: ps_dictionary_label
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 7
     region: content
   links:
     settings: {  }

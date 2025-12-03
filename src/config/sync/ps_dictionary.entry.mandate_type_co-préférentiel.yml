@@ -1,0 +1,12 @@
+uuid: 4f8c1e93-108a-4ecd-954e-bbabf994ec86
+langcode: fr
+status: true
+dependencies: {  }
+id: mandate_type_co-préférentiel
+dictionary_type: mandate_type
+code: Co-préférentiel
+label: Co-préférentiel
+description: ''
+weight: 0
+deprecated: false
+metadata: {  }

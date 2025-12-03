@@ -1,0 +1,19 @@
+uuid: de4e3a6e-3f1c-4fa1-92a0-70fe8c076551
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - ps_division
+id: node.field_surface
+field_name: field_surface
+entity_type: node
+type: ps_surface
+settings: {  }
+module: ps_division
+locked: false
+cardinality: '-1'
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

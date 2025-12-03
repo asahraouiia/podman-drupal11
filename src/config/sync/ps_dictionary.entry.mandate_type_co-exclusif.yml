@@ -1,0 +1,12 @@
+uuid: 0425a128-b1cd-4937-b52a-70ed189ca024
+langcode: fr
+status: true
+dependencies: {  }
+id: mandate_type_co-exclusif
+dictionary_type: mandate_type
+code: Co-Exclusif
+label: Co-Exclusif
+description: ''
+weight: 0
+deprecated: false
+metadata: {  }

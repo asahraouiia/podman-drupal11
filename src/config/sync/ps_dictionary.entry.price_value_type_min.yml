@@ -1,0 +1,14 @@
+uuid: 899025c6-9b81-49e5-8170-1db6195a6970
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: _Oqoq_z1QsgPstNGiqVM933iHZUtp30Dc3zhAYBw7tI
+id: price_value_type_min
+dictionary_type: price_value_type
+code: MIN
+label: Minimum
+description: null
+weight: 0
+deprecated: false
+metadata: {  }

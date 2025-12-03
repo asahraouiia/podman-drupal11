@@ -1,0 +1,16 @@
+uuid: ca18d85c-4e34-4d34-8092-83d56f83403d
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 8ykmV2fyiY1NHYraD-2c2PQRPp2DU-YHYmCgpGcHJWs
+id: price_period_year
+dictionary_type: price_period
+code: YEAR
+label: 'Per year'
+description: 'Annual period'
+weight: 0
+deprecated: false
+metadata:
+  months: 12
+  abbreviation: /year

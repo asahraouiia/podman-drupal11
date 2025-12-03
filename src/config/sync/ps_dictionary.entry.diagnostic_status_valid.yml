@@ -1,0 +1,15 @@
+uuid: 6604a030-aee6-462c-91c2-4762267de99b
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: To7uN_BHgmaatZK2N8SzyYZUW-bqsu8KvZkgC1lGQEw
+id: diagnostic_status_valid
+dictionary_type: diagnostic_status
+code: VALID
+label: Valid
+description: 'Diagnostic is current and valid'
+weight: 0
+deprecated: false
+metadata:
+  color: green

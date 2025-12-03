@@ -1,0 +1,14 @@
+uuid: d9464db6-32c9-42bd-8e77-94eba3fc92cb
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: klleX4T6PyqLv6X7XrbisxSTGL2FNM1XTYjugCaEUSo
+id: security_system_type_cctv
+dictionary_type: security_system_type
+code: CCTV
+label: 'Video surveillance (CCTV)'
+description: 'Closed-circuit television monitoring.'
+weight: 40
+deprecated: false
+metadata: {  }

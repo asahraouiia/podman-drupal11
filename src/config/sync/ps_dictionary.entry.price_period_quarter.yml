@@ -1,0 +1,16 @@
+uuid: 42f906cd-c813-4e3a-ba7a-1f1aa378be0e
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: _c-jy0pQ6mT3DvueRcUpq2aHtI2MVvh0g0omB3HeT2g
+id: price_period_quarter
+dictionary_type: price_period
+code: QUARTER
+label: 'Per quarter'
+description: 'Quarterly period (3 months)'
+weight: 20
+deprecated: false
+metadata:
+  months: 3
+  abbreviation: /quarter

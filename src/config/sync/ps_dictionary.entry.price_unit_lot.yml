@@ -1,0 +1,16 @@
+uuid: 9600f4b3-2530-44f3-8f98-97b553e250b5
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: XjJpS7rtdUlSbsUpdZU48bfZsl0U_G_5iUVfNaC5wZo
+id: price_unit_lot
+dictionary_type: price_unit
+code: LOT
+label: Lot
+description: 'Per lot/parking space'
+weight: 20
+deprecated: false
+metadata:
+  unit_symbol: lot
+  calculation: per_unit

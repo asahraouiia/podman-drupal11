@@ -1,0 +1,16 @@
+uuid: 01562892-9819-4265-b8f2-a136f180157e
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Ap7sFE8eFh0W3_Ouq7WWiKLCcG8aC2Z1snKHIwDWxXs
+id: price_unit_global
+dictionary_type: price_unit
+code: GLOBAL
+label: Global
+description: 'Global price (no unit)'
+weight: 30
+deprecated: false
+metadata:
+  unit_symbol: ''
+  calculation: global

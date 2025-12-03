@@ -1,0 +1,14 @@
+uuid: 461a51c6-a2ac-4fcb-bb9d-93abbd1facf0
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Yk-Dq6cBtjX56jb7rgyvnZ8FTlngtB9SyonipEZYrnU
+id: property_type_sale_rent
+dictionary_type: property_type
+code: SALE_RENT
+label: 'Sale or Rent'
+description: 'Property available for sale or rent'
+weight: 2
+deprecated: false
+metadata: {  }

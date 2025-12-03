@@ -1,0 +1,16 @@
+uuid: 36e7f654-25fd-44b8-9e13-064ac65bb1aa
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: HR8KfrVdtgPru9axJYUKc5RD-7ATCf0m-wWug2HZsoA
+id: currency_gbp
+dictionary_type: currency
+code: GBP
+label: 'British Pound (£)'
+description: 'United Kingdom Pound Sterling'
+weight: 2
+deprecated: false
+metadata:
+  symbol: £
+  iso_code: GBP

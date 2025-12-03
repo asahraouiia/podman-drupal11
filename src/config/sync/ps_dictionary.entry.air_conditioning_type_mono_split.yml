@@ -1,0 +1,14 @@
+uuid: 0873b980-161f-471e-85b5-4d56a51c4e63
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: bszRHtMqlMZaEiNICdBREDdwRVaikOBJWSBlhpR8nEs
+id: air_conditioning_type_mono_split
+dictionary_type: air_conditioning_type
+code: MONO_SPLIT
+label: Mono-split
+description: 'Single indoor unit with outdoor condenser'
+weight: 1
+deprecated: false
+metadata: {  }

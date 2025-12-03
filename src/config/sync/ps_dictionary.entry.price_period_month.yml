@@ -1,0 +1,16 @@
+uuid: 773f81dc-fcec-425a-9593-be4f7c9e4665
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 3iylkNAU0iIFH7ePwPPnVlBCwW61EjypulMlQ_dTVyw
+id: price_period_month
+dictionary_type: price_period
+code: MONTH
+label: 'Per month'
+description: 'Monthly period'
+weight: 10
+deprecated: false
+metadata:
+  months: 1
+  abbreviation: /month

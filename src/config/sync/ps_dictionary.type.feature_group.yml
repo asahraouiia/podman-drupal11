@@ -1,0 +1,12 @@
+uuid: 64a74141-0b6c-46d7-a3fb-76f19a9a1e0e
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Rvp8l4PPd5r8lxodwUFtJW_StFcEPiJrLhxXHCqWV6U
+id: feature_group
+label: 'Feature Group'
+description: 'Groups organizing features for display (equipments, services, building condition, more information).'
+is_translatable: false
+locked: true
+metadata: {  }

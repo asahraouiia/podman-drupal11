@@ -1,0 +1,14 @@
+uuid: 1173c833-eb86-4abf-9fdf-bc96ee7de402
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: EdIaT8dRpCGUY5UkIIj3SYUSTm1Pwz3luK9muxed9jg
+id: cabling_type_optical_fiber
+dictionary_type: cabling_type
+code: OPTICAL_FIBER
+label: 'Optical fiber'
+description: 'Fiber optic network cabling'
+weight: 0
+deprecated: false
+metadata: {  }

@@ -1,0 +1,15 @@
+uuid: c15f4b59-5c01-49f2-9371-28f911b3306f
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 83sRC3lI2OWr3U7F5FDsO1HLGK4Xqxbmptp0GM2wTv0
+id: diagnostic_type_asbestos
+dictionary_type: diagnostic_type
+code: ASBESTOS
+label: Asbestos
+description: 'Asbestos detection diagnostic'
+weight: 20
+deprecated: false
+metadata:
+  category: health

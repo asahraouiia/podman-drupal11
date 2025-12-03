@@ -1,0 +1,12 @@
+uuid: 8ffe249b-eb5e-459a-964b-0dc0fbca38ad
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: UAc6uz7RBspT4w6-As_L5WkLWfdLUl00B6iLCImz8VA
+id: transaction_type
+label: 'Transaction Type'
+description: 'Property transaction categories (office, logistics, retail, etc.)'
+is_translatable: false
+locked: true
+metadata: {  }

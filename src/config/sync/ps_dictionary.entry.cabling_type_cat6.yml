@@ -1,0 +1,14 @@
+uuid: 7118377a-541e-411f-a55c-c8aeb1847c7f
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: jfv2GIfe8F__Kbq2n9RedZMyCrw4TVWqZrlyODQ9JBM
+id: cabling_type_cat6
+dictionary_type: cabling_type
+code: CAT6
+label: 'Category 6'
+description: 'Cat6 Ethernet cabling'
+weight: 1
+deprecated: false
+metadata: {  }

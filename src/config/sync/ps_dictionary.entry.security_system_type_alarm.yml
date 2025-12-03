@@ -1,0 +1,14 @@
+uuid: 90bbb9a1-d255-4e2e-9a6f-8496f7469448
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: gYuh3SMHHV4b6i0CKefdhSFfSOhPTZWmpT2JLyOwezA
+id: security_system_type_alarm
+dictionary_type: security_system_type
+code: ALARM
+label: 'Alarm system'
+description: 'Intrusion alarm system.'
+weight: 0
+deprecated: false
+metadata: {  }

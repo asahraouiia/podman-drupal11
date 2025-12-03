@@ -1,0 +1,19 @@
+uuid: b62b01bc-fbed-47b0-9400-ded73df1ff3f
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: qruGqMH5fpJXXIc-LvixuK6l51tdXrhaEXuC9GGli-o
+id: meeting_room
+label: 'Meeting room'
+description: 'Meeting room available'
+value_type: yesno
+dictionary_type: null
+unit: null
+is_required: false
+group: services
+weight: 3
+is_facetable: false
+validation_rules: {  }
+metadata:
+  icon: users

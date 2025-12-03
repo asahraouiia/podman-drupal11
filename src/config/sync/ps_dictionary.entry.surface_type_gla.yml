@@ -1,0 +1,15 @@
+uuid: d97b9ef8-01ff-4839-bda7-c26bd566050d
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: IWECZx3qU499lbSSFJ0_lTnwKW5n29t_lUWMoxkyCDA
+id: surface_type_gla
+dictionary_type: surface_type
+code: GLA
+label: 'GLA (Gross Leasable Area)'
+description: 'Gross leasable area'
+weight: 10
+deprecated: false
+metadata:
+  full_name: 'Gross Leasable Area'

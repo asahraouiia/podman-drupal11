@@ -1,0 +1,18 @@
+uuid: 1b830f3f-5d7c-45c4-9cd2-e81f85cab563
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: i14IlrBqZMR3ZJwOFc56vpYuGpktstKmRBIH0_DOkGs
+id: garden_perfect_condition
+label: 'Garden in perfect condition'
+description: 'Garden level in perfect condition'
+value_type: flag
+dictionary_type: null
+unit: null
+is_required: false
+group: more_information
+weight: 1
+is_facetable: false
+validation_rules: {  }
+metadata: {  }

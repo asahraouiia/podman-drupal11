@@ -1,0 +1,16 @@
+uuid: 02495ebd-f01f-48df-a186-4234b36ccaa0
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: JYONZr8aFXkXA9LSwneZ2JiWNB-CDOMnmAfCjTPQwH8
+id: surface_unit_hectare
+dictionary_type: surface_unit
+code: HECTARE
+label: 'ha (Hectares)'
+description: 'Hectares (large areas)'
+weight: 20
+deprecated: false
+metadata:
+  symbol: ha
+  conversion_factor: 10000.0

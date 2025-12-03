@@ -1,0 +1,14 @@
+uuid: 470e0873-c150-4633-91ac-873389134544
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 81oPtct8CnhdQHQ_3fgUo4rChtIpl95JF2lmwvdDBeE
+id: air_conditioning_type_reversible
+dictionary_type: air_conditioning_type
+code: REVERSIBLE
+label: 'Reversible system'
+description: 'Cooling and heating reversible AC system'
+weight: 0
+deprecated: false
+metadata: {  }

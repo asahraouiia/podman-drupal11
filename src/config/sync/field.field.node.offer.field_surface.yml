@@ -1,0 +1,21 @@
+uuid: 74b7f9cd-cbc2-435d-b3ad-682e2a096007
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_surface
+    - node.type.offer
+  module:
+    - ps_division
+id: node.offer.field_surface
+field_name: field_surface
+entity_type: node
+bundle: offer
+label: Surface
+description: ''
+required: 0
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: ps_surface

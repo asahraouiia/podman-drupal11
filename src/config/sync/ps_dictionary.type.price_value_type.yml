@@ -1,0 +1,12 @@
+uuid: f6026a8f-4395-416d-b87a-56e7aeb804d9
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 1i4w8VAyxEXLmAIbaxJmnV9K3Hn3pi2BXvARg6m2zHk
+id: price_value_type
+label: 'Price Value Type'
+description: 'Type of price value (minimum, maximum, etc.)'
+is_translatable: false
+locked: true
+metadata: {  }

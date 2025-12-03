@@ -1,0 +1,14 @@
+uuid: ea3bf329-66d4-4986-81d2-8eb5bcc9ac05
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: qPinrfoEYBSDKlkd_iMDEWqU-KwJ9TEL1i7xvOl7-Tw
+id: price_unit_m2
+dictionary_type: price_unit
+code: M2
+label: m²
+description: 'Square meter'
+weight: 0
+deprecated: false
+metadata: {  }

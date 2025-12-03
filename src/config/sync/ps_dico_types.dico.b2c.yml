@@ -1,8 +1,0 @@
-uuid: 0d8692d9-d03f-4900-917f-d5e7f8eac477
-langcode: fr
-status: true
-dependencies: {  }
-id: b2c
-label: B2C
-type: mandate_type
-weight: '0'

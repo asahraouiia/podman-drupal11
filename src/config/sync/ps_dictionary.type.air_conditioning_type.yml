@@ -1,0 +1,12 @@
+uuid: b56ca254-8b8c-40ae-a49b-be7bd073e111
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: FhgVaq2vMgslOqjcATJgMBTW9EX4zgZ9aoBKzObj46U
+id: air_conditioning_type
+label: 'Air Conditioning Type'
+description: 'Types of air conditioning systems available in the property.'
+is_translatable: false
+locked: true
+metadata: {  }

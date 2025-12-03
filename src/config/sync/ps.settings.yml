@@ -1,0 +1,10 @@
+_core:
+  default_config_hash: b6V-nQT1oypqq7EJu4PJh_nsnSDy6ZA3odIbRdK2eeA
+performance:
+  enable_monitoring: true
+  slow_request_threshold: 1000
+validation:
+  strict_mode: false
+notification:
+  default_channel: email
+  retry_attempts: 3

@@ -1,0 +1,19 @@
+uuid: 0f812df9-f8cb-4d0b-b12e-f72bd71928db
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: kZrBoNKgfX4h2B1sYJNAVfMX9N6KXYWypXYZoxAoir8
+id: cafeteria
+label: Cafeteria
+description: 'Cafeteria available'
+value_type: yesno
+dictionary_type: null
+unit: null
+is_required: false
+group: services
+weight: 4
+is_facetable: false
+validation_rules: {  }
+metadata:
+  icon: utensils

@@ -1,0 +1,14 @@
+uuid: 58f6e25d-e570-4852-a2eb-12bec33e5461
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 4DDw9C5bQXca31DZo3xkoWQu39WPI0VTyG7SX-nN1pk
+id: heating_system_type_individual
+dictionary_type: heating_system_type
+code: INDIVIDUAL
+label: Individual
+description: 'Individual heating system'
+weight: 0
+deprecated: false
+metadata: {  }

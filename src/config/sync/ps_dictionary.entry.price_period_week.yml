@@ -1,0 +1,16 @@
+uuid: c34da593-91cd-44cd-8e43-63aa2f8bd498
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: aRXI-zaYZguUGulK3ii03jax7aIav2V86XVcuq9vTdM
+id: price_period_week
+dictionary_type: price_period
+code: WEEK
+label: 'Per week'
+description: 'Weekly period'
+weight: 30
+deprecated: false
+metadata:
+  months: 0.25
+  abbreviation: /week
