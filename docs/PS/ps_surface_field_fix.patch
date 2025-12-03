@@ -1,0 +1,29 @@
+diff --git a/src/web/modules/custom/ps/ps_division/src/Plugin/Field/FieldWidget/SurfaceDefaultWidget.php b/src/web/modules/custom/ps/ps_division/src/Plugin/Field/FieldWidget/SurfaceDefaultWidget.php
+index cdab71d..c228cbd 100644
+--- a/src/web/modules/custom/ps/ps_division/src/Plugin/Field/FieldWidget/SurfaceDefaultWidget.php
++++ b/src/web/modules/custom/ps/ps_division/src/Plugin/Field/FieldWidget/SurfaceDefaultWidget.php
+@@ -116,4 +116,24 @@ public function formElement(FieldItemListInterface $items, $delta, array $elemen
+     return $element;
+   }
+ 
++  /**
++   * {@inheritdoc}
++   */
++  public function massageFormValues(array $values, array $form, FormStateInterface $form_state): array {
++    $massaged = [];
++    
++    foreach ($values as $delta => $value) {
++      // Extract values from nested containers (row_value_unit and row_classification)
++      $massaged[$delta] = [
++        'value' => $value['row_value_unit']['value'] ?? NULL,
++        'unit' => $value['row_value_unit']['unit'] ?? NULL,
++        'type' => $value['row_classification']['type'] ?? NULL,
++        'nature' => $value['row_classification']['nature'] ?? NULL,
++        'qualification' => $value['row_classification']['qualification'] ?? NULL,
++      ];
++    }
++    
++    return $massaged;
++  }
++
+ }
